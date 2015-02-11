@@ -1,241 +1,824 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
-<title>ITT: We are all Pokémon Trainers - TV Tropes Forum</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1;" />
-<meta name="verify-v1" content="pmsmgvY91pq86DQaFOjAJupoJEXrsSNdldOPo+WvgfE=" />
-<link rel="alternate" type="application/rss+xml" href="../rss.xml" title="RSS Feed"/>
-<link rel="stylesheet" href="http://static.tvtropes.org/pmwiki/template.css" type="text/css" />
-<script  type="text/javascript" language="javascript" src="http://static.tvtropes.org/pmwiki/template.js"></script>
-<style type="text/css">
-.forumbuttonsmall{border:1px outset lightgray;border-bottom:1px solid lightgray;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:2px;background:white;}
-.forumbuttonsmall img{vertical-align:middle;border:none;}
-.forumbutton{border:1px outset lightgray;border-bottom:1px solid lightgray;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:8px;padding-top:4px;background:white;}
-.forumbutton:hover{border:1px outset darkgray;}
-.forumbutton img{vertical-align:middle;border:none;position:relative;}
-.tropername{background-color:white;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:1px;}
-.notifier{background-color:rgb(205,230,191);text-align:center;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:4px;}
-.notifier a{color:green;border-color:green;}
-a.fauxbutton{-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:1px outset silver;padding:8px;}
-a.fauxbutton:hover{	border:1px outset midnightblue;}
+        <!DOCTYPE html>
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta name="Description" content="" />
+        <meta name="verify-v1" content="pmsmgvY91pq86DQaFOjAJupoJEXrsSNdldOPo+WvgfE=">
+        <meta property="og:image" content="http://static.tvtropes.org/lampshade_logo_blue.png">
+        
+        <title>
+            ITT: We are all Pok&Atilde;&copy;mon Trainers - Television Tropes &amp; Idioms        </title>
 
+        <link rel="stylesheet" type='text/css' href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type='text/css' href="http://static.tvtropes.org/css/style-default.css?rev=34">
+        <link rel="stylesheet" type='text/css' href="http://static.tvtropes.org/css/style-new.css?rev=34">
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+                
+        
+        <style type="text/css">
+
+$forumreplybody
 </style>
+            <!-- Responsive CSS -->
+                            <link rel="stylesheet" media="(max-width: 750px)" href="http://static.tvtropes.org/css/mobile.css?rev=34" />
+                        <link rel="stylesheet" href="http://static.tvtropes.org/css/component.css?rev=34" />
+
+	    <meta id="viewport" name="viewport" content="width=device-width">
+            <script type="text/javascript"> 
+	    // Add a media query change listener
+	    var mql = window.matchMedia("(orientation: portrait)");
+	    fixViewport(mql);
+	    mql.addListener(fixViewport);
+
+	    function fixViewport(mql) {
+	        var viewportmeta = document.querySelector('meta[name="viewport"]');
+	    	if(mql.matches) { // Changed to portrait
+	    	   var size="device-width";
+		   if(screen.width<=400) size="400";
+		   viewportmeta.content = 'width='+size;
+	    	}
+	    	else { // Changed to landscape
+		   viewportmeta.content = 'width=device-width, initial-scale=1.0';
+	    	}
+	    }
+            </script>
+                
+            <script type="text/javascript" src="http://static.tvtropes.org/js/uilang.js" ></script>
+            <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+            <script type="text/javascript" src="http://static.tvtropes.org/js/main.js?rev=34" ></script>
+
+            <script type='text/javascript' src='http://static.tvtropes.org/js/mobile.js?rev=34'></script>
+
+                
+                
+                
 <script type="text/javascript">
-function holler_done(image, seq_num){
-	image.src="http://static.tvtropes.org/pmwiki/pub/smiles/accept.png";
+function holler_done(image, seq_num, status){
+	if(status == 1) {
+		image.src="http://static.tvtropes.org/pmwiki/pub/smiles/accept.png";
+		image.onclick = function() { holler_done(this, seq_num, 0); }
+		image.title = "mark this one done";
+	} else if (status == 0) {
+		image.src="http://static.tvtropes.org/pmwiki/pub/smiles/exclamation.png";
+		image.onclick = function() { holler_done(this, seq_num, 1); }
+		image.title = "mark this one NOT done";
+	}
 	//anchor.innerHTML="done";
-	var url = "hollermarker.php?seq_num="+seq_num;
+	var url = "hollermarker.php?seq_num="+seq_num+"&status="+status;
 	sendurl(url);
 	return;
 }
 
 </script>
+                <script type="text/javascript">
+                
+                    $(function(){
+                        new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
+                            type : 'cover'
+                        } );
+                    });
+                
+                </script>
 
-<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/js/google_top_exp.js"> </script>
-<script type="text/javascript" >
-	function togglenote(id){
-         var ele=object(id);
-         var state = ele.style.display;
-         if(state=='none') ele.style.display='inline';
-         if(state=='inline')ele.style.display='none';
-     }
-</script>
-<script type="text/javascript" >
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-3821842-1']);
-  _gaq.push(['_trackPageview']);
+                
+                <script type="text/javascript" >
+                 (function() {
+                   var src = '//www.googletagservices.com/tag/js/gpt.js';
+                   document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+                 })();
+                 (function() {
+                    var src = '//ox-d.tvtropes.servedbyopenx.com/w/1.0/jstag?ef=db&nc=5376056-TVTropes';
+                    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+                 })();
+                </script>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+                <script type="text/javascript" >
+		      //DFP Tags
+                      googletag.cmd.push(function() {
 
-</script>
+		    	var mapping1 = googletag.sizeMapping().
+		    	  addSize([750, 0], [728, 90]). // Desktop
+		    	  addSize([480, 0], [468, 60]). // Mobile (landscape)
+		    	  addSize([0, 0], [320, 50]). // Mobile (portrait)
+		    	  build();
+                    	var slot1=googletag.defineSlot('/5376056/leaderboard', [[728, 90], [468, 60], [320, 50]], 'dfp-ad-leaderboard').defineSizeMapping(mapping1).addService(googletag.pubads());
+                    	googletag.defineSlot('/5376056/atf_skyscraper', [160, 600], 'dfp-ad-atf_skyscraper').addService(googletag.pubads());
+	   	    	googletag.defineSlot('/5376056/btf_skyscraper', [160, 600], 'dfp-ad-btf_skyscraper').addService(googletag.pubads());
+                    	googletag.defineSlot('/5376056/brt_med_rectangle', [[300, 250],[336,280]], 'dfp-ad-brt_med_rectangle').addService(googletag.pubads());
+                    	googletag.pubads().set("page_url", "http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540");
+                    	googletag.enableServices();
 
-<script type="text/javascript" >
- (function() {
-   var src = '//www.googletagservices.com/tag/js/gpt.js';
-   document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
- })();
- (function() {
-    var src = '//ox-d.tvtropes.servedbyopenx.com/w/1.0/jstag?ef=db&nc=5376056-TVTropes';
-    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
- })();
-</script>
+	    	    	var mq0 = window.matchMedia("(min-width:751px)");
+	    	    	var mq1 = window.matchMedia("(min-width:481px and max-width: 750px)");
+	    	    	var mq2 = window.matchMedia("(max-width: 480px)");
+	    	    	mq0.addListener(refresh);
+	    	    	mq1.addListener(refresh);
+	    	    	mq2.addListener(refresh);
+		   
+		    	var timer;
+		    	function refresh() { 
+			    window.clearTimeout(timer);
+			    timer=window.setTimeout (function () { googletag.pubads().refresh([slot1]); }, 500);
+	 	    	}
 
-<script type="text/javascript" >
+                    });
 
-googletag.cmd.push(function() {
-googletag.defineSlot('/5376056/btf_skyscraper', [160, 600], 'div-gpt-ad-1397664170799-0').addService(googletag.pubads());
-googletag.defineSlot('/5376056/leaderboard', [728, 90], 'div-gpt-ad-1359659270091-0').addService(googletag.pubads());
-googletag.defineSlot('/5376056/atf_skyscraper', [160, 600], 'div-gpt-ad-1359659612995-0').addService(googletag.pubads());
-googletag.defineSlot('/5376056/brt_med_rectangle', [[300, 250],[336,280]], 'div-gpt-ad-1359660027796-0').addService(googletag.pubads());
-googletag.pubads().set("page_url", "http://tvtropes.org//pmwiki/posts.php?discussion=12971269370A74820100&page=14540");
-googletag.pubads().enableSingleRequest();
-googletag.enableServices();
+                </script>
 
-});
-</script>
+                
+            </head>
+            <body>
 
-<style>
-.strike{text-decoration:line-through}
-.announcementbanner{background-color:#fffcf1;text-align:center;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:4px;border:1px solid green;color:green;}
-span.pink{background-color:#FBFBFB;color:#FF448A;}
-span.gray{background-color:#FBFBFB;color:#626262;}
-span.green{background-color:#FBFBFB;color:#008141;}
-span.purple{background-color:#FBFBFB;color:#6A006A;}
-span.blue{background-color:#FBFBFB;color:#004183;}
-span.teal{background-color:#FBFBFB;color:#008282;}
-span.gold{background-color:#FBFBFB;color:#bc9600;}
-span.cinnamon{background-color:#FBFBFB;color:#AA6600;}
-span.forestgreen{background-color:#FBFBFB;color:#2c5500;}
-span.white{background-color:#FBFBFB;color:#FBFBFB;}
-span.red{background-color:#FBFBFB;color:#C80815;}
-span.evil{background-color:black;color:#C80815;font-weight:bold;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:1px solid black;}
-.bulletin_box{color:black;font-family:serif;width:160px;border:1px solid silver; text-align:left;background-color:white;}
-.bulletin{margin:4px;border-bottom:1px solid #A6CAF0;}
-.bulletin_header{background-color:#A6CAF0;text-align:center;margin:2px;padding:0px;}
-.dateline{color:chocolate;}
-div.forumreplybody{background:white;border:1px solid #A6CAF0;-webkit-border-bottom-left-radius:4px;-webkit-border-bottom-right-radius:4px;-moz-border-radius-bottomleft:4px;-moz-border-radius-topleft:4px;-moz-border-radius-bottomright:4px;border-top:none;}
-div.forumsigline{text-align:center;color:color:#333333;}
-div.forumsigline a {color:color:#333333; text-decoration:none;}
-div.forumsigline a:visited {color:color:#333333;}
-div.forumsigline a:hover {color:color:#333333; text-decoration:underline;}
+                <div class="container">
+                    <div class="mp-pusher" id="mp-pusher"><!-- Push Wrapper -->
+                    
+                        
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <h2 class="fa fa-home">Main Menu</h2>
+                <ul>
 
-div.forumreplyheader{background-color:white;border:1px solid #A6CAF0;color:#333333;min-height:32px;padding-top:3px;overflow:hidden;}
-div.forumreplyheader a {color:color:#333333;vertical-align:middle;}
-div.forumreplyheader a:visited {color:color:#333333;}
+                    <!-- ============
+                      Profile Tab 
+                    ============ -->
+                    <li class="fa fa-chevron-left"> 
+                        <a class="fa fa-user" href="#">Profile</a>
 
-div.forumimageholder{border:none;}
-div.forumtitle{border:none;}
-span.tiptag {font-size:smaller;}
-span.notelabel {font-size:smaller;cursor:pointer;font-style:italic; vertical-align:top;}
-.gratisbanner{background-color:#FFF5EE;text-align:center;-moz-border-radius:4px;-webkit-border-radius:4px;padding:4px;border:1px solid #FFF5EE;color:black;}
-div.forumreplybody img{max-width:350px;}
+                        <div class="mp-level"> <!-- Progile Menu -->
+                            <h2 class="fa fa-user">Profile</h2>
 
-</style>
-</head>
-<body  >
-<!--
-<div class="announcementbanner">
-Ready to make a webseries for the wiki? Cool, let's make some magic. Send your sample reel link to: video_submissions@tvtropes.org
-</div>
--->
+                            <a class="mp-back" href="#">Back</a>
+                                                            <ul>
+                                    <li><a href="/pmwiki/login.php">Login</a></li>
+                                    <li><a href="/pmwiki/new_knower.php">Register</a></li>
+                                </ul>
+                                                    </div> <!-- /Progile Tab -->
 
-<div class="container" id="container">
-	<div class="pagetitle" style="position:absolute;width:169px;text-align:center;" >
-		<a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/HomePage" ><img style="border:none;"  src="http://static.tvtropes.org/lampshade_logo_blue.png" alt="TV Tropes Org"  /></a>
-		<p>Forums</p>
-	</div>
-	<center><div class="pagetitle"><span style="font-size:large;">Role Playing: </span><br/><a class="titlelink" href="#" style="border:none;">ITT: We are all Pokémon Trainers</a></div>	<table>
-		<tr>
-			<td>
-				<div class="buttonframe" >
-				<div class="buttoninterior"  onclick="window.location.href=this.getElementsByTagName('a')[0].href;" ><a href="http://tvtropes.org/pmwiki/changes.php" >wiki edits</a></div></div>
-			</td>
-			<td>
-				<div class="buttonframe" >
-				<div class="buttoninterior"  onclick="window.location.href=this.getElementsByTagName('a')[0].href;"><a href="http://tvtropes.org/pmwiki/lbs.php" >liveblogs</a></div></div>
-			</td>
-			<td>
-				<div class="buttonframe" >
-				<div class="buttoninterior"  onclick="window.location.href=this.getElementsByTagName('a')[0].href;"><a href="http://tvtropes.org/pmwiki/review_activity.php" >reviews</a></div></div>
-			</td>
-			<td>
-				<div class="buttonframe" >
-				<div class="buttoninterior"  onclick="window.location.href=this.getElementsByTagName('a')[0].href;"><a href="http://tvtropes.org/pmwiki/awl.php">watchlist</a></div></div>
-			</td>
-			<td>
-				<div class="buttonframe">
-				<div class="buttoninterior"  onclick="window.location.href=this.getElementsByTagName('a')[0].href;"><a href="http://tvtropes.org/pmwiki/yk_activity.php?interval=1">YKTTW</a></div></div>
-			</td>
-			<td>
-				<div class="buttonframe" >
-				<div class="buttoninterior"  onclick="window.location.href=this.getElementsByTagName('a')[0].href;"><a href="http://tvtropes.org/pmwiki/topics.php">all forums</a></div>
-				</div>
-			</td>
-			<td>
-				<div class="buttonframe" >
-				<div class="buttoninterior"  onclick="window.location.href=this.getElementsByTagName('a')[0].href;"><a href="http://tvtropes.org/pmwiki/title_search_form.php">wiki search</a></div>
-				</div>
-			</td>
-		</tr>
-	</table>
+                    </li> <!-- /Progile Tab -->
 
-	<table>
-	<tr>
-	<td>
-	<div class="buttonframe" style="width:300px;background-color:#A6CAF0;text-align:center">
-	<form id="forum_search_titles" action="forum_search_titles.php" method="post" style="display:inline;" >
-		<table style="width:100%;"><tr>
-        <td style="text-align:center"><input type="text" id="keyword" name="keyword" value="" size="18" /></td>
-        <td style="font-size:x-small;font-weight:bolder;text-align:center;cursor:pointer;" onclick="object('forum_search_titles').submit();"> search forum titles </td></tr></table>
-	</form>
-	</div>
-	</td>
-	<td>				
-		<div class="buttonframe" style="width:300px;background-color:#A6CAF0;text-align:center">
-			<table style="width:100%;">
-				<tr>
-	       <td style="text-align:center">
-					<form action="http://tvtropes.org/pmwiki/search_result.php" id="cse-search-box">
-			  		<div>
-			    		<input type="hidden" name="cx" value="partner-pub-6610802604051523:amzitfn8e7v" />
-			    		<input type="hidden" name="cof" value="FORID:10" />
-			    		<input type="hidden" name="ie" value="ISO-8859-1" />
-			    		<input type="text" name="q" size="31" />
-			  		</div>
-					</form>
-				</td>
-	      <td style="font-size:x-small;font-weight:bolder;text-align:center;cursor:pointer;" onclick="object('cse-search-box').submit();">google site search</td></tr></table>
-				</td>
-			</tr>
-		</table>
 
-<!-- leaderboard -->
-<div id='div-gpt-ad-1359659270091-0' style='width:728px; height:90px;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1359659270091-0'); });
-</script>
-</div>
-</center>
-<table style="width:100%;table-layout:fixed;">
-<tr><td style="width:165px;vertical-align:top;">
+                    <!-- ============
+                       Tropes Tab 
+                    ============ -->
+                    <li><a class="fa fa-newspaper-o" href="/pmwiki/pmwiki.php/Main/Tropes">Tropes</a></li>
+
+                    
+                    <!-- ============
+                     Troperville Tab 
+                    ============ -->
+                    <li><a class="fa fa-users" href="/pmwiki/topics.php">Forums</a></li>
+
+
+                    <li class="fa fa-chevron-left"> <!-- Troperville Tab -->
+
+                        <a class="fa fa-university" href="#">Troperville</a>
+
+                        <div class="mp-level"> <!-- Troperville Menu -->
+                            <h2 class="fa fa-university">Troperville</h2>
+
+                            <a class="mp-back" href="#">Back</a>
+                            <ul>
+                                <li><a href="/pmwiki/pmwiki.php/Administrivia/WelcomeToTVTropes">Welcome To TV Tropes</a></li>
+                                <li><a href="/pmwiki/browse.php">Browse Tropes</a></li>
+                                <li><a href="/pmwiki/query.php?type=att">Ask The Tropers</a></li>
+                                <li><a href="/pmwiki/conversations.php?topic=renames">Trope Repair Shop</a></li>
+                                <li><a href="/pmwiki/changes.php?filter=Discussions">Recent Discussions</a></li>
+                                <li><a href="/pmwiki/review_activity.php">Latest Reviews</a></li>
+                                <li><a href="/pmwiki/yk_activity.php?interval=1">You Know, That Thing Where...</a></li>
+                                <li><a href="/pmwiki/query.php?type=ykts">Remember That Show?</a></li> 
+                                <li><a href="/pmwiki/pmwiki.php/Main/LostAndFound">Lost And Found</a></li> 
+                                <li><a href="/pmwiki/pmwiki.php/Main/Administrivia">Administrivia</a></li> 
+                                <li><a href="/pmwiki/pmwiki.php/Main/ListOfShowsThatNeedSummary">Works That Need A Summary</a></li> 
+                                <li><a href="/pmwiki/pmwiki.php/Administrivia/WhatGoesWhereOnTheWiki">What Goes Where</a></li>
+                                <li><a href="/pmwiki/lbs.php">Live Blogs</a></li>
+                            </ul>
+                        </div> <!-- /Troperville Tab -->
+
+                    </li> <!-- /Troperville Tab -->
+
+
+                    <!-- ============
+                        Toys Tab 
+                    ============ -->
+                    <li class="fa fa-chevron-left">
+                        <a class="fa fa-futbol-o" href="#">Toys</a>
+
+                        <div class="mp-level"> <!-- Toys Menu -->
+                            <h2 class="fa fa-futbol-o">Toys</h2>
+
+                            <a class="mp-back" href="#">Back</a>
+                            <ul>
+                                <li><a href="/pmwiki/pitchgenerator.php">Pitch Generator</a></li>
+                                <li><a href="/pmwiki/storygen.php">Story Generator</a></li>
+                            </ul>
+                        </div> <!-- /Toys Tab -->
+
+                    </li> <!-- /Toys Tab -->
+
+
+                    <!-- ============
+                        Tools Tab 
+                    ============ -->
+                    <li class="fa fa-chevron-left">
+
+                        <a class="fa fa-wrench" href="#">Tools</a>
+
+                        <div class="mp-level"> <!-- Toys Menu -->
+                            <h2 class="fa fa-wrench">Tools</h2>
+
+                            <a class="mp-back" href="#">Back</a>
+                            <ul>
+                                <li><a href="/pmwiki/title_search_form.php">Title Search</a></li> 
+                                <li><a href="/pmwiki/customize_wikiword_request.php">Customize Wikiword</a></li>
+                                <li><a href="/pmwiki/cutlist.php">Cut List</a></li>
+                                <li><a href="/pmwiki/changes.php">New Edits</a></li>
+                                <li><a href="/pmwiki/recent_edit_reasons.php">Edit Reasons</a></li>
+                                <li><a href="/pmwiki/changes.php?todayonly=true">Recently New</a></li>
+                                <li><a href="/pmwiki/launches.php">Launches</a></li>
+                                <li><a href="/pmwiki/login.php">Get Known</a></li>
+                                <li><a href="/pmwiki/profile.php">Your Profile</a></li>
+                                <li><a href="/pmwiki/associate_email.php">Add Email Address</a></li>
+                                <li><a href="/pmwiki/index_report.php">Indexes</a></li>
+                                <li><a href="/pmwiki/imguploader.php">Image Uploader</a></li>
+                                <li><a href="/pmwiki/img_list.php">Images List</a></li>
+                                <li><a href="/pmwiki/crown_activity.php">Crowner Activity</a></li>
+                                                                <li><a href="/pmwiki/no_types.php">Un-typed Pages</a></li>
+                                <li><a href="/pmwiki/page_type_audit.php">Recent Page Type Changes</a></li>
+                                <li><a href="/pmwiki/pmwiki.php/Main/WelcomeToTVTropes">Editing Overview</a></li>
+                                <li><a href="/pmwiki/pmwiki.php/Main/GoodStyle">Good Style</a></li>
+                                <li><a href="/pmwiki/pmwiki.php/Main/RuleOfCautiousEditingJudgment">Rule Of Cautious Editing Judgment</a></li>
+                                <li><a href="/pmwiki/pmwiki.php/Main/TextFormattingRules">Text Formatting</a></li>
+                                <li><a href="/pmwiki/pmwiki.php/Main/PageTemplates">Page Templates</a></li>
+                                <li><a href="/pmwiki/pmwiki.php/Main/WikiSandbox">Wiki Sandbox</a></li>
+                            </ul>
+                        </div> <!-- /Toys Tab -->
+
+                    </li> <!-- /Toys Tab -->
+
+                    <!-- ============
+                      Spoilers Tab 
+                    ============ -->
+                    <li> 
+                                                <a class="fa fa-eye" href="javascript:void(0);" id="mobileSpoilerPref">Spoilers: Off</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+                            <div class="scroller"><!-- this is for emulating position fixed of the nav -->
+                            <div class="scroller-inner"><!-- /scroller-inner -->
+        
+
+        <div class="header">
+
+            <div id="trigger"><i class="fa fa-bars fa-2x" style="color:rgb(73, 132, 188);"></i></div>
+
+            <div class="logo">
+                                    <a href="/"><img src="http://static.tvtropes.org/logo_blue_small.png" alt=""></a>
+                            </div>
+                    <div class="search">
+
+                        <form action="/pmwiki/search_result.php" id="cse-search-box" class="form-wrapper cf"  name="main_search">
+                            
+                                <input type="hidden" name="cx" value="partner-pub-6610802604051523:amzitfn8e7v">
+                                <input type="hidden" name="cof" value="FORID:10">
+                                <input type="hidden" name="ie" value="ISO-8859-1">
+                                <input type="text" name="q" size="31" placeholder="Search..." value="">
+                                <!--<i class="fa fa-search search-icon"></i>-->
+                           
+                            <input name="siteurl" type="hidden" value="">
+                            <input name="ref" type="hidden" value="">
+                            <input name="ss" type="hidden" value="">
+                        </form>
+                        <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" async=""></script>
+                        <div class="search-submit">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div><!--search-->
+
+
+                    <a href="/pmwiki/pmwiki.php/Main/MusicVideoSyndrome" rel="nofollow">
+                        <div class="random-btn header-rand"> 
+                            <div class='dice-cont'><img src="http://static.tvtropes.org/dice.png" width="38" /></div>
+                            <div class="random-text">Random</div> 
+                        </div>
+                    </a>
+
+                     <div class="main-nav">
+                        <ul>
+                            <li><a href="/pmwiki/pmwiki.php/Main/Tropes">Tropes</a><div class='border-right'></div></li>
+                            <li id="main-tab2"><a href="/pmwiki/pmwiki.php/Main/Media">Media</a><div class='border-right'></div></li>
+                           <li><a href="/pmwiki/topics.php">Forums</a></li>
+                        </ul>
+                    </div>                    
+
+                    <div class="profile-link-header">
+                                                    <a href="/pmwiki/login.php">
+                                <i class="fa fa-user def_user_img"></i>
+                            </a>  
+                        
+                        <div class="profile-link-header2">
+                             <ul class="popnav pop-in-sub">
+                                <li>
+
+                                                                            <div id='dd-login' class='dropdown' tabindex="1"><a href="#" class="more">Login <i class="fa fa-caret-down"></i></a>
+                                            <ul class="dropdown_ul">
+                                                <li><a href="/pmwiki/login.php">Login</a></li>
+                                                <li><a href="/pmwiki/new_knower.php">Register</a></li>
+                                            </ul>
+                                        </div>
+                                                                    </li>
+                                           
+                            </ul>     
+                        </div>
+                   </div>  
+
+                   <div id="mobile-search-btn"><i class="fa fa-search fa-2x"></i></div>
+
+        </div><!--header-->
+
+        <div id="mobile-search-bar">
+            <form action="/pmwiki/search_result.php" id="cse-search-box-mobile" class="form-wrapper cf"  name="main_search_mobile">
+                            
+                <input type="hidden" name="cx" value="partner-pub-6610802604051523:amzitfn8e7v">
+                <input type="hidden" name="cof" value="FORID:10">
+                <input type="hidden" name="ie" value="ISO-8859-1">
+                <input type="text" name="q" size="31" placeholder="Search..." value="">
+
+                <input name="siteurl" type="hidden" value="">
+                <input name="ref" type="hidden" value="">
+                <input name="ss" type="hidden" value="">
+            </form>
+            <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box-mobile&amp;lang=en" async=""></script>
+            <div id="search-submit-mobile">
+                <i class="fa fa-search fa-2x"></i>
+            </div>
+        </div>
+
+
+        <div class="left-sidebar">
+            
+            <div class="left-sidebar-gradient">
+                <div id="left-side-nav-cont">
+                    <div class="left-side-nav">
+
+                        <div class="social-media-cont">
+                            <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2FTVTropes&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=1408672709383742" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe>
+                        </div>
+
+                    
+                        <div class="side-nav-heading">
+                          Tropers Online 
+                        </div>  
+
+                        <div id="tropers_online">2,522</div>
+
+                    <div class="side-nav-heading">
+                      Resources <i class="fa fa-caret-down"></i>
+                    </div>  
+
+                    <h2 class="expand more-keywords"><i class="fa fa-plus-circle caretClick"></i>Troperville</h2>
+
+                    <div class="collapse" style="display:none;">
+                        <ul class="left-side-nav">
+                            <li><a class="twikilink" href="/pmwiki/pmwiki.php/Administrivia/WelcomeToTVTropes">Welcome To TV Tropes</a></li>
+                            <li><a class="twikilink" href="/pmwiki/browse.php">Browse Tropes</a></li>
+                            <li><a class="twikilink" href="/pmwiki/query.php?type=att">Ask The Tropers</a></li>
+                            <li><a class="twikilink" href="/pmwiki/topics.php">Forum</a></li> 
+                            <li><a class="twikilink" href="/pmwiki/conversations.php?topic=renames">Trope Repair Shop</a></li>
+                            <li><a class="twikilink" href="/pmwiki/changes.php?filter=Discussions">Recent Discussions</a></li>
+                            <li><a class="twikilink" href="/pmwiki/review_activity.php">Latest Reviews</a></li>
+                            <li><a class="twikilink" href="/pmwiki/yk_activity.php?interval=1">You Know, That Thing Where...</a></li>
+                            <li><a class="twikilink" href="/pmwiki/query.php?type=ykts">Remember That Show?</a></li> 
+                            <li><a class="twikilink" href="/pmwiki/pmwiki.php/Main/LostAndFound">Lost And Found</a></li> 
+                            <li><a class="twikilink" href="/pmwiki/pmwiki.php/Main/Administrivia">Administrivia</a></li> 
+                            <li><a class="twikilink" href="/pmwiki/pmwiki.php/Main/ListOfShowsThatNeedSummary">Works That Need A Summary</a></li> 
+                            <li><a class="twikilink" href="/pmwiki/pmwiki.php/Administrivia/WhatGoesWhereOnTheWiki">What Goes Where</a></li>
+                                                                                    <li><a class="twikilink" href="/pmwiki/lbs.php">Live Blogs</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 class="expand more-keywords"><i class="fa fa-plus-circle caretClick"></i>Toys</h2>
+
+                    <div class="collapse" style="display:none;">
+                        <ul class="left-side-nav">
+                            <li><a class="urllink" href="/pmwiki/pitchgenerator.php">Pitch Generator</a></li>
+                            <li><a class="urllink" href="/pmwiki/storygen.php">Story Generator</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 class="expand more-keywords"><i class="fa fa-plus-circle caretClick"></i>Tools</h2>
+
+                        <div class="collapse" style="display:none;">
+                            <div class="left-side-nav">
+
+                                
+                                <div class="p5_button_holder">
+
+                                                                     </div>   
+                            
+                                <ul>
+                                    <li><a class="twikilink" href="/pmwiki/title_search_form.php">Title Search</a></li> 
+                                    <li><a class="twikilink" href="/pmwiki/customize_wikiword_request.php">Customize Wikiword</a></li>
+                                    <li><a class="twikilink" href="/pmwiki/cutlist.php">Cut List</a></li> 
+                                                                        <li><a class="urllink" href="/pmwiki/changes.php">New Edits</a></li>
+                                    <li><a class="urllink" href="/pmwiki/recent_edit_reasons.php">Edit Reasons</a></li>
+                                    <li><a class="urllink" href="/pmwiki/changes.php?todayonly=true">Recently New</a></li>
+                                    <li><a class="urllink" href="/pmwiki/launches.php">Launches</a></li>
+                                    <li><a class="urllink" href="/pmwiki/login.php">Get Known</a></li>
+                                    <li><a class="urllink" href="/pmwiki/profile.php">Your Profile</a></li>
+                                    <li><a class="urllink" href="/pmwiki/associate_email.php">Add Email Address</a></li>
+                                    <li><a class="twikilink" href="/pmwiki/index_report.php">Indexes</a></li>
+                                    <li><a class="urllink" href="/pmwiki/imguploader.php">Image Uploader</a></li>
+                                    <li><a class="urllink" href="/pmwiki/img_list.php">Images List</a></li>
+                                    <li><a class="urllink" href="/pmwiki/crown_activity.php">Crowner Activity</a></li>
+                                                                        <li><a class="urllink" href="/pmwiki/no_types.php">Un-typed Pages</a></li>
+                                    <li><a class="urllink" href="/pmwiki/page_type_audit.php">Recent Page Type Changes</a></li>
+                                
+                                    <li>
+                                        <a class="twikilink" href="/pmwiki/pmwiki.php/Main/WelcomeToTVTropes">Editing Overview</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="twikilink" href="/pmwiki/pmwiki.php/Main/GoodStyle">Good Style</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="twikilink" href="/pmwiki/pmwiki.php/Main/RuleOfCautiousEditingJudgment">Rule Of Cautious Editing Judgment</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="twikilink" href="/pmwiki/pmwiki.php/Main/TextFormattingRules">Text Formatting</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="twikilink" href="/pmwiki/pmwiki.php/Main/PageTemplates">Page Templates</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="twikilink" href="/pmwiki/pmwiki.php/Main/WikiSandbox">Wiki Sandbox</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="side-nav-heading">
+                          Tropes By <i class="fa fa-caret-down"></i>
+                        </div>  
+
+                        <h2 class="expand more-keywords"><i class="fa fa-plus-circle caretClick"></i>Genre</h2>
+
+                        <div class="collapse" style="display:none;">
+                            <ul class="left-side-nav">
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/ActionAdventureTropes' title='Main/ActionAdventureTropes'>Action Adventure</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/ComedyTropes' title='Main/ComedyTropes'>Comedy</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/CommercialsTropes' title='Main/CommercialsTropes'>Commercials</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/CrimeAndPunishmentTropes' title='Main/CrimeAndPunishmentTropes'>Crime & Punishment</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/DramaTropes' title='Main/DramaTropes'>Drama</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/HorrorTropes' title='Main/HorrorTropes'>Horror</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/LoveTropes' title='Main/LoveTropes'>Love</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/NewsTropes' title='Main/NewsTropes'>News</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/ProfessionalWrestling' title='Main/ProfessionalWrestling'>Professional Wrestling</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/SpeculativeFictionTropes' title='Main/SpeculativeFictionTropes'>Speculative Fiction</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/SportsStoryTropes' title='Main/SportsStoryTropes'>Sports Story</a></li>
+                                <li class='plus'> <a class='twikilink' href='/pmwiki/pmwiki.php/Main/WarTropes' title='Main/WarTropes'>War</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <h2 class="expand more-keywords"><i class="fa fa-plus-circle caretClick"></i>Media</h2>
+
+                        <div class="collapse" style="display:none;">
+                            <ul class="left-side-nav">
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/AnimationTropes" title="/pmwiki/pmwiki.php/Main/AnimationTropes">Animation (Western)</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Anime" title="/pmwiki/pmwiki.php/Main/Anime">Anime</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/ComicBookTropes" title="/pmwiki/pmwiki.php/Main/ComicBookTropes">Comic Book</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/FanFic" title="/pmwiki/pmwiki.php/FanFic/FanFics">Fan Fics</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Film" title="/pmwiki/pmwiki.php/Main/Film">Film</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/GameTropes" title="/pmwiki/pmwiki.php/Main/GameTropes">Game</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Literature" title="/pmwiki/pmwiki.php/Main/Literature">Literature</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/MusicAndSoundEffects" title="/pmwiki/pmwiki.php/Main/MusicAndSoundEffects">Music And Sound Effects</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/NewMediaTropes" title="/pmwiki/pmwiki.php/Main/NewMediaTropes">New Media</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/PrintMediaTropes" title="/pmwiki/pmwiki.php/Main/PrintMediaTropes">Print Media</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Radio" title="/pmwiki/pmwiki.php/Main/Radio">Radio</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/SequentialArt" title="/pmwiki/pmwiki.php/Main/SequentialArt">Sequential Art</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/TabletopGames" title="/pmwiki/pmwiki.php/Main/TabletopGames">Tabletop Games</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Television" title="/pmwiki/pmwiki.php/Main/Television">Television</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Theater" title="/pmwiki/pmwiki.php/Main/Theater">Theater</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/VideogameTropes" title="/pmwiki/pmwiki.php/Main/VideogameTropes">Videogame</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Webcomics" title="/pmwiki/pmwiki.php/Main/Webcomics">Webcomics</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <h2 class="expand more-keywords"><i class="fa fa-plus-circle caretClick"></i>Narrative</h2>
+
+                        <div class="collapse" style="display:none;">
+                            <ul class="left-side-nav">
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/UniversalTropes" title="/pmwiki/pmwiki.php/Main/UniversalTropes">Universal</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/AppliedPhlebotinum" title="/pmwiki/pmwiki.php/Main/AppliedPhlebotinum">Applied Phlebotinum</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/CharacterizationTropes" title="/pmwiki/pmwiki.php/Main/CharacterizationTropes">Characterization</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Characters" title="/pmwiki/pmwiki.php/Main/Characters">Characters</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/CharactersAsDevice" title="/pmwiki/pmwiki.php/Main/CharactersAsDevice">Characters As Device</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Dialogue" title="/pmwiki/pmwiki.php/Main/Dialogue">Dialogue</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Motifs" title="/pmwiki/pmwiki.php/Main/Motifs">Motifs</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/NarrativeDevices" title="/pmwiki/pmwiki.php/Main/NarrativeDevices">Narrative Devices</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Paratext" title="/pmwiki/pmwiki.php/Main/Paratext">Paratext</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Plots" title="/pmwiki/pmwiki.php/Main/Plots">Plots</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Settings" title="/pmwiki/pmwiki.php/Main/Settings">Settings</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Spectacle" title="/pmwiki/pmwiki.php/Main/Spectacle">Spectacle</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 class="expand more-keywords"><i class="fa fa-plus-circle caretClick"></i>Other Categories</h2>
+
+                        <div class="collapse" style="display:none;">
+                            <ul class="left-side-nav">
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/BritishTellyTropes" title="/pmwiki/pmwiki.php/Main/BritishTellyTropes">British Telly</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/TheContributors" title="/pmwiki/pmwiki.php/Main/TheContributors">The Contributors</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/CreatorSpeak" title="/pmwiki/pmwiki.php/Main/CreatorSpeak">Creator Speak</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/Creators" title="/pmwiki/pmwiki.php/Main/Creators">Creators</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/DerivativeWorks" title="/pmwiki/pmwiki.php/Main/DerivativeWorks">Derivative Works</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/LanguageTropes" title="/pmwiki/pmwiki.php/Main/LanguageTropes">Language</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/LawsAndFormulas" title="/pmwiki/pmwiki.php/Main/LawsAndFormulas">Laws And Formulas</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/ShowBusiness" title="/pmwiki/pmwiki.php/Main/ShowBusiness">Show Business</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/SplitPersonalityTropes" title="/pmwiki/pmwiki.php/Main/SplitPersonalityTropes">Split Personality</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/StockRoom" title="/pmwiki/pmwiki.php/Main/StockRoom">Stock Room</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/TropeTropes" title="/pmwiki/pmwiki.php/Main/TropeTropes">Trope</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/TruthAndLies" title="/pmwiki/pmwiki.php/Main/TruthAndLies">Truth And Lies</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/TruthInTelevision" title="/pmwiki/pmwiki.php/Main/TruthInTelevision">Truth In Television</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 class="expand more-keywords"><i class="fa fa-plus-circle"></i>Topical Tropes</h2>
+
+                        <div class="collapse" style="display:none;">
+                            <ul class="left-side-nav">
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/BetrayalTropes" title="/pmwiki/pmwiki.php/Main/BetrayalTropes">Betrayal</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/CensorshipTropes" title="/pmwiki/pmwiki.php/Main/CensorshipTropes">Censorship</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/CombatTropes" title="/pmwiki/pmwiki.php/Main/CombatTropes">Combat</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/DeathTropes" title="/pmwiki/pmwiki.php/Main/DeathTropes">Death</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/FamilyTropes" title="/pmwiki/pmwiki.php/Main/FamilyTropes">Family</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/FateAndProphecyTropes" title="/pmwiki/pmwiki.php/Main/FateAndProphecyTropes">Fate And Prophecy</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/FoodTropes" title="/pmwiki/pmwiki.php/Main/FoodTropes">Food</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/HolidayTropes" title="/pmwiki/pmwiki.php/Main/HolidayTropes">Holiday</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/MemoryTropes" title="/pmwiki/pmwiki.php/Main/MemoryTropes">Memory</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/MoneyTropes" title="/pmwiki/pmwiki.php/Main/MoneyTropes">Money</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/MoralityTropes" title="/pmwiki/pmwiki.php/Main/MoralityTropes">Morality</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/PoliticsTropes" title="/pmwiki/pmwiki.php/Main/PoliticsTropes">Politics</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/ReligionTropes" title="/pmwiki/pmwiki.php/Main/ReligionTropes">Religion</a>
+                                </li>
+
+                                <li class="plus">
+                                    <a class="twikilink" href="/pmwiki/pmwiki.php/Main/SchoolTropes" title="/pmwiki/pmwiki.php/Main/SchoolTropes">School</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <a href="/pmwiki/pmwiki.php/WikiSandbox/OTT">
+                                                                    <img style="width:92%;margin-left: 5px" src="http://static.tvtropes.org/on-the-tropes.png" alt="">
+                                                            </a>
+                        </div>  
+
+                        <div>
+                            <a href="/pmwiki/pmwiki.php/WebVideo/EchoChamber">
+                                <img class="echochamber" style="width: 80%;margin-left: 14px;" src="http://static.tvtropes.org/echo-chamber-small.jpg">
+                            </a>
+                        </div>
+                        
+                        
+                            <div class="page-options-cont">
+                                <div class="side-nav-heading">Page Options</div>
+                                <input type='hidden' value="Off" id="spoiler-pref" />
+                                    <div class="onoffswitch">
+                                        <span class="spoiler-label">Spoilers: </span>
+                                            <div class="Switch Round Off">
+                                        <div class="Toggle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                      
+                         
+			 <div class="dfp-sidebar-ad">
+			   
+<div id='dfp-ad-atf_skyscraper'>
+<script type='text/javascript'> 
+googletag.cmd.push(function() { googletag.display('dfp-ad-atf_skyscraper'); }); 
+</script> 
+</div>			 </div>
+
+						 <div class="dfp-sidebar-ad">
+			   
+<div id='dfp-ad-btf_skyscraper'>
+<script type='text/javascript'> 
+googletag.cmd.push(function() { googletag.display('dfp-ad-btf_skyscraper'); }); 
+</script> 
+</div>			 </div>
+			                    </div>
+                </div><!--left-side-nav-cont-->
+            </div><!--left-sidebar-gradient-->
+        </div><!--left-sidebar-->
+         
+                <div class="main discussion-page">
+                                    <div class="sub-nav">
+                    <ul>
+                                                    <li><a href="/pmwiki/conversations.php?topic=0000000000000000000004ul"><i class="fa fa-arrow-left sub-arrow"></i>Back To Role Playing</a></li>
+                                                                        <li><a href="/pmwiki/factivity.php">New Posts</a></li>
+                        <li><a href="/pmwiki/pmwiki.php/Main/TVTropesForum">About The Forums</a></li>
+                    </ul>
+                </div><!--sub-nav-->  
+                                        
+                    <div class="box-margin atf_banner">
+                        
+<div id='dfp-ad-leaderboard'>
+<script type='text/javascript'> 
+googletag.cmd.push(function() { googletag.display('dfp-ad-leaderboard'); }); 
+</script> 
+</div>                    </div>
+
+                    <h2>
+	ITT: We are all Pokémon Trainers: 
+	
+</h2>
 <div>
+	<div class="alphalist">
+		<div>
+			Total posts: 
+			[444,450]
+		</div>
+		 <a class="forumpagebutton " href="/pmwiki/posts.php?discussion=12971269370A74820100&page=1">1</a>  ... <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14535">14535</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14536">14536</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14537">14537</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14538">14538</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14539">14539</a>  <div class="forumpagebuttons active_letter">14540</div> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14541">14541</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14542">14542</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14543">14543</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14544">14544</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14545">14545</a>  ... <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=17778">17778</a>  
 
+	</div>
 	
-	<center>
-<div id='div-gpt-ad-1359659612995-0' style='width:160px; height:600px;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1359659612995-0'); });
-</script>
-</div>
-		<a href="http://tvtropes.org/pmwiki/pmwiki.php/WikiSandbox/OTT"><img src="http://static.tvtropes.org/ott_sai_final-167.png"/></a>
-		
-<!-- btf_skyscraper -->
-<div id='div-gpt-ad-1397664170799-0' style='width:160px; height:600px;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1397664170799-0'); });
-</script>
-</div>
-
-	</center>
-	
-
-</div><!--float col -->
-
-</td><td style="vertical-align:top;" >
-	
-<div style="text-align:center;font-size:larger;margin-bottom:6px;margin-top:10px;">
-	Total posts: [384,451] <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=1">&nbsp;1</a>  ... <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14535">14535</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14536">14536</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14537">14537</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14538">14538</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14539">14539</a>  <div class="forumpagebuttons">14540</div> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14541">14541</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14542">14542</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14543">14543</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14544">14544</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14545">14545</a>  ... <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=15379">15379</a>  
-	<p>
-		ITT: We are all Pokémon Trainers: 
-	</p>
 </div>
 
 
-<div style="margin-botton:8px;min-height:32px;">
+
+<div>
 	 
 	
 	 
@@ -249,318 +832,455 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1397664170799-0');
 	
 </div>
 
-<a name="firstpost"> </a><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363476"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363476</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/ILoveDogs" >I Love Dogs</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363476" title="permanent link to ILoveDogs post on Tue, 25th Mar '14 3:38:27 PM" >Tue, 25th Mar '14 3:38:27 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Lunn Guyland
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/phpkoxvsj_c2pm405.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2>Pokeball Factory</h2>
+<a name="firstpost"> </a><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363476"> </a><span style=""><sup>363476</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/ILoveDogs" >ILoveDogs</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363476" title="permanent link to ILoveDogs post on 25th Mar 2014 03:38:27 PM">25th Mar 2014 03:38:27 PM</a><span class="forumAuthFrom"> from Lunn Guyland
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/sylveon9421_jpg_100.png" height="100" width="100" /><div class="forumBadgeHolder"></div></div><div class="forumtext"><h2>Pokeball Factory</h2>
 <p></p>-Jingles floats out of the way and jingles. She sets up a Light Screen-
 <p></p><strong>Mimmy</strong>: Watch out! I have a really weird effect on people.
 <p></p>-her eyes widen-
 <p></p>See? I've got her doing it!
-<div class="forumsigline" >TACTICS
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363477"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363477</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/PippingFool" >Pipping Fool</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363477" title="permanent link to PippingFool post on Tue, 25th Mar '14 3:40:05 PM" >Tue, 25th Mar '14 3:40:05 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Sydney, The Vivid City
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">And they all lived happily ever after <3</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/joancornella81338.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2> &gt; Laverre</h2>
-<p></p><span class="asscaps" > Today at <strong>LAVERRE</strong>,  a man is standing by the the well. I just so happens to be that this fellow is on some sort of <strong>MISSON</strong> from a <strong>MYSTERY MAN</strong>.</span>
+</div><div class="forumsigline" >Do you think I'm an animal? Am I not?
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363477"> </a><span style=""><sup>363477</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/PippingFool" >PippingFool</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363477" title="permanent link to PippingFool post on 25th Mar 2014 03:40:05 PM">25th Mar 2014 03:40:05 PM</a><span class="forumAuthFrom"> from Sydney, The Vivid City
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Getting away with murder</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/shiney3394_jpg_100.png" height="92" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Less than Three
+</div></div><div class="forumtext"><h2> &gt; Laverre</h2>
+<p></p><span class="asscaps" > Today at <strong>LAVERRE</strong>, a man is standing by the the well. I just so happens to be that this fellow is on some sort of <strong>MISSON</strong> from a <strong>MYSTERY MAN</strong>.</span>
 <p></p><span class="asscaps" > Do you want to give this man a name?</span>
-<p></p><div class="forumsigline" >no words, only dreams now
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363478"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363478</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/DuneTheWanderer" >Dune The Wanderer</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363478" title="permanent link to DuneTheWanderer post on Tue, 25th Mar '14 3:41:07 PM" >Tue, 25th Mar '14 3:41:07 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Nowhere, USA
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Married to the job</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/guykazamaavvy5309.png" height="87" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" >SUPER HERO
-</div><h2>Inner Sanctum</h2>
+<p></p></div><div class="forumsigline" >All about big hair, big shoes and big attitude!
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363478"> </a><span style=""><sup>363478</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/DuneTheWanderer" >DuneTheWanderer</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363478" title="permanent link to DuneTheWanderer post on 25th Mar 2014 03:41:07 PM">25th Mar 2014 03:41:07 PM</a><span class="forumAuthFrom"> from Nowhere, USA
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Married to the job</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/scarecrow7094.jpg" height="90" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Volunteer
+</div></div><div class="forumtext"><h2>Inner Sanctum</h2>
 <p></p><strong>Ajax</strong>: &lt;GAH! That <em>stings</em>!&gt;
-<p></p><strong>Dune</strong>: Okay,  <em>now</em> it's getting serious. Ajax,  return!
+<p></p><strong>Dune</strong>: Okay, <em>now</em> it's getting serious. Ajax, return!
 <p></p>-Dune recalls Ajax before taking out an Ultra Ball.-
-<p></p><strong>Dune</strong>: Let's see how you like <em>this</em> guy. Go,  Vega!
-<p></p>-Dune throws the Ultra Ball,  releasing a rather angry looking Excadrill.-
-<p></p><strong>Vega</strong>: &lt;You'll be seeing red,  by the time <em>I'm</em> done with you.&gt;
+<p></p><strong>Dune</strong>: Let's see how you like <em>this</em> guy. Go, Vega!
+<p></p>-Dune throws the Ultra Ball, releasing a rather angry looking Excadrill.-
+<p></p><strong>Vega</strong>: &lt;You'll be seeing red, by the time <em>I'm</em> done with you.&gt;
 <p></p><strong>Dune</strong>: Use Bulldoze!
 <p></p>-Vega snaps his claws like castanets before charging Maliwan with lighting speed.-
-<div class="forumsigline" >Garcia, no one can hire my feelings!
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363479"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363479</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/ILoveDogs" >I Love Dogs</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363479" title="permanent link to ILoveDogs post on Tue, 25th Mar '14 3:44:13 PM" >Tue, 25th Mar '14 3:44:13 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Lunn Guyland
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/phpkoxvsj_c2pm405.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2>Laverre</h2>
+</div><div class="forumsigline" ><strong>Go.</strong>
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363479"> </a><span style=""><sup>363479</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/ILoveDogs" >ILoveDogs</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363479" title="permanent link to ILoveDogs post on 25th Mar 2014 03:44:13 PM">25th Mar 2014 03:44:13 PM</a><span class="forumAuthFrom"> from Lunn Guyland
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/sylveon9421_jpg_100.png" height="100" width="100" /><div class="forumBadgeHolder"></div></div><div class="forumtext"><h2>Laverre</h2>
 <p></p>-He shall be named <a class='createlink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/McSnugget' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/McSnugget'>Mc Snugget</a>. o3o-
-<div class="forumsigline" >TACTICS
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363480"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363480</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363480" title="permanent link to Mezzopiano post on Tue, 25th Mar '14 3:46:01 PM" >Tue, 25th Mar '14 3:46:01 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Arrapago Reef
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/chibimezzoavatarv24542.png" height="100" width="73" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" ><a class='twikilink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth'>Perky Goth</a>
-</div><h2>Poké Ball Factory</h2>
-<p></p><strong>Noelle</strong>: Follow that up with a Reflect,  Cait!
+</div><div class="forumsigline" >Do you think I'm an animal? Am I not?
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363480"> </a><span style=""><sup>363480</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363480" title="permanent link to Mezzopiano post on 25th Mar 2014 03:46:01 PM">25th Mar 2014 03:46:01 PM</a><span class="forumAuthFrom"> from The Sky
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/Fortisavatar9863.jpg" height="100" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >I wanna fly high~
+</div></div><div class="forumtext"><h2>Poké Ball Factory</h2>
+<p></p><strong>Noelle</strong>: Follow that up with a Reflect, Cait!
 <p></p><strong>Caitsidhe</strong>: &lt;Got it~&gt;
-<p></p>-Caitsidhe creates a second barrier,  intersecting with the Light Screen-
-<p></p><strong>Mezzo</strong>: Guess we need more power then. Cerberus,  Sunny Day!
-<p></p><strong>Cerberus</strong>: &lt;Oooh,  perfect! It'll all go up in flames!&gt;
-<p></p>-Cerberus creates an orb of sunlight above the arena,  and as she does so her horns take on a slight glow-
+<p></p>-Caitsidhe creates a second barrier, intersecting with the Light Screen-
+<p></p><strong>Mezzo</strong>: Guess we need more power then. Cerberus, Sunny Day!
+<p></p><strong>Cerberus</strong>: &lt;Oooh, perfect! It'll all go up in flames!&gt;
+<p></p>-Cerberus creates an orb of sunlight above the arena, and as she does so her horns take on a slight glow-
 <p></p><center><span class="asscaps" >Cerberus' Solar Power drained her HP!</span></center>
 <p></p><strong>Lily</strong>: Vayne! Brick Break on me to take out those shields!
 <p></p><strong>Vayne</strong>: &lt;...What?&gt;
 <p></p><strong>Lily</strong>: On me! I mean the... key thing! Why do I keep wanting to say "me"?
-<p></p><strong>Vayne</strong>: &lt;Ah,  that makes much more sense.&gt;
-<p></p>-Vayne leaps at Jingles with a chop,  aiming to break both the barriers as he does so-
-<p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 3:57:28 PM by Mezzopiano<p><div class="forumsigline" >Hug an Umbreon. They make great hats, and can even block mind-reading!
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363481"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363481</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/ILoveDogs" >I Love Dogs</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363481" title="permanent link to ILoveDogs post on Tue, 25th Mar '14 3:48:28 PM" >Tue, 25th Mar '14 3:48:28 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Lunn Guyland
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/phpkoxvsj_c2pm405.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2>Poke Ball Factory</h2>
+<p></p><strong>Vayne</strong>: &lt;Ah, that makes much more sense.&gt;
+<p></p>-Vayne leaps at Jingles with a chop, aiming to break both the barriers as he does so-
+<p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 3:57:28 PM by Mezzopiano<p></div><div class="forumsigline" >Hug an Altaria. They're soft and cottony.
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363481"> </a><span style=""><sup>363481</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/ILoveDogs" >ILoveDogs</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363481" title="permanent link to ILoveDogs post on 25th Mar 2014 03:48:28 PM">25th Mar 2014 03:48:28 PM</a><span class="forumAuthFrom"> from Lunn Guyland
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/sylveon9421_jpg_100.png" height="100" width="100" /><div class="forumBadgeHolder"></div></div><div class="forumtext"><h2>Poke Ball Factory</h2>
 <p></p>-Jingles is hit for some damage. She jingles and uses Draining Kiss on Vayne-
-<p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 3:49:49 PM by ILoveDogs<p><div class="forumsigline" >TACTICS
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363482"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363482</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Pentigan" >Pentigan</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363482" title="permanent link to Pentigan post on Tue, 25th Mar '14 3:53:33 PM" >Tue, 25th Mar '14 3:53:33 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Fall City
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Complex: I'm real, she is imaginary</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/gegrge8926_jpg_100.png" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" >how do i legs?
-</div>-The Seviper wasn't expecting the same move twice in a row from different mons,  and is thusly knocked out-
-<p></p><strong>Jack:</strong> Okay,  uh... Dahl,  Jacobs,  you're up!
+<p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 3:49:49 PM by ILoveDogs<p></div><div class="forumsigline" >Do you think I'm an animal? Am I not?
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363482"> </a><span style=""><sup>363482</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Pentigan" >Pentigan</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363482" title="permanent link to Pentigan post on 25th Mar 2014 03:53:33 PM">25th Mar 2014 03:53:33 PM</a><span class="forumAuthFrom"> from Summerland
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;"></span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/venusaur6859.png" height="100" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Fwomph
+</div></div><div class="forumtext">-The Seviper wasn't expecting the same move twice in a row from different mons, and is thusly knocked out-
+<p></p><strong>Jack:</strong> Okay, uh... Dahl, Jacobs, you're up!
 <p></p>-He tosses out two pokeballs at the same time-
 <p></p><center> <span class="asscaps" > Jack sent out a Tyranitar&#9794;!</span> </center>
 <p></p><center> <span class="asscaps" > Jack sent out a Grass/Steel Rhyhorn&#9794;!</span> </center>
-<div class="forumsigline" ><strong>I'm on Youtube now!</strong>
+</div><div class="forumsigline" ><strong>I'm on Youtube now!</strong>
 <a class='urllink' href='https://www.youtube.com/user/TheRealPentigan'>New videos every Monday, Wednesday and Friday</a>
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363483"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363483</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363483" title="permanent link to Mezzopiano post on Tue, 25th Mar '14 3:56:37 PM" >Tue, 25th Mar '14 3:56:37 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Arrapago Reef
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/chibimezzoavatarv24542.png" height="100" width="73" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" ><a class='twikilink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth'>Perky Goth</a>
-</div><h2>Poké Ball Factory</h2>
-<p></p>-as Vayne strikes with his Brick Break,  it shatters both of the shields-
-<p></p>-however,  soon after he is hit by a Draining Kiss,  knocking him out-
-<p></p><strong>Lily</strong>: Let's finish this,  Tifa!
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363483"> </a><span style=""><sup>363483</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363483" title="permanent link to Mezzopiano post on 25th Mar 2014 03:56:37 PM">25th Mar 2014 03:56:37 PM</a><span class="forumAuthFrom"> from The Sky
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/Fortisavatar9863.jpg" height="100" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >I wanna fly high~
+</div></div><div class="forumtext"><h2>Poké Ball Factory</h2>
+<p></p>-as Vayne strikes with his Brick Break, it shatters both of the shields-
+<p></p>-however, soon after he is hit by a Draining Kiss, knocking him out-
+<p></p><strong>Lily</strong>: Let's finish this, Tifa!
 <p></p>-Lily sends out a Pancham-
 <p></p><strong><span class="gray" >Tifa the Pancham&#9792;</span></strong>: &lt;I'm ready!&gt;
-<p></p><strong>Mezzo</strong>: Okay! Now,  hit the Sylveon with a Solar Beam!
-<p></p>-Cerberus gathers light energy within herself,  then fires a massive beam of light at Caitsidhe-
+<p></p><strong>Mezzo</strong>: Okay! Now, hit the Sylveon with a Solar Beam!
+<p></p>-Cerberus gathers light energy within herself, then fires a massive beam of light at Caitsidhe-
 <p></p><strong>Mezzo</strong>: -jumps back- Whoa!
 <p></p><strong>Cerberus</strong>: &lt;Burn everything!&gt;
-<p></p><strong>Caitsidhe</strong>: &lt;Oh,  my poor eyes...&gt;
-<p></p>-after the beam dissipates,  Caitsidhe's ribbons hit the ground,  and his body falls soon after-
-<p></p><strong>Noelle</strong>: You think it's over,  but it's only just begun! Come on out,  Yunie!
+<p></p><strong>Caitsidhe</strong>: &lt;Oh, my poor eyes...&gt;
+<p></p>-after the beam dissipates, Caitsidhe's ribbons hit the ground, and his body falls soon after-
+<p></p><strong>Noelle</strong>: You think it's over, but it's only just begun! Come on out, Yunie!
 <p></p>-Noelle sends out a Gardevoir-
 <p></p><strong><span class="green" >Yuna the Gardevoir&#9792;</span></strong>: &lt;A pleasure to meet you...&gt;
-<div class="forumsigline" >Hug an Umbreon. They make great hats, and can even block mind-reading!
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363484"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363484</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/ILoveDogs" >I Love Dogs</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363484" title="permanent link to ILoveDogs post on Tue, 25th Mar '14 3:58:57 PM" >Tue, 25th Mar '14 3:58:57 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Lunn Guyland
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/phpkoxvsj_c2pm405.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2>Pokeball Center</h2>
+</div><div class="forumsigline" >Hug an Altaria. They're soft and cottony.
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363484"> </a><span style=""><sup>363484</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/ILoveDogs" >ILoveDogs</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363484" title="permanent link to ILoveDogs post on 25th Mar 2014 03:58:57 PM">25th Mar 2014 03:58:57 PM</a><span class="forumAuthFrom"> from Lunn Guyland
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/sylveon9421_jpg_100.png" height="100" width="100" /><div class="forumBadgeHolder"></div></div><div class="forumtext"><h2>Pokeball Center</h2>
 <p></p>-Mimmy giggles-
-<p></p>A Pancham? Well,  OK...let me use Play Rough on it! Wait,  no! Not Jingles,  me! GAH-ooh,  is this a key?
-<p></p>-she picks up a key on the ground and inspects it,  eyes shining-
-<p></p>-Jingles,  meanwhile,  jingles and Plays Rough with Tifa-
-<div class="forumsigline" >TACTICS
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363485"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363485</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363485" title="permanent link to Mezzopiano post on Tue, 25th Mar '14 4:07:10 PM" >Tue, 25th Mar '14 4:07:10 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Arrapago Reef
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/chibimezzoavatarv24542.png" height="100" width="73" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" ><a class='twikilink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth'>Perky Goth</a>
-</div><h2>Poké Ball Factory</h2>
+<p></p>A Pancham? Well, OK...let me use Play Rough on it! Wait, no! Not Jingles, me! GAH-ooh, is this a key?
+<p></p>-she picks up a key on the ground and inspects it, eyes shining-
+<p></p>-Jingles, meanwhile, jingles and Plays Rough with Tifa-
+</div><div class="forumsigline" >Do you think I'm an animal? Am I not?
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363485"> </a><span style=""><sup>363485</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363485" title="permanent link to Mezzopiano post on 25th Mar 2014 04:07:10 PM">25th Mar 2014 04:07:10 PM</a><span class="forumAuthFrom"> from The Sky
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/Fortisavatar9863.jpg" height="100" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >I wanna fly high~
+</div></div><div class="forumtext"><h2>Poké Ball Factory</h2>
 <p></p><strong>Mezzo</strong>: Psychic type? Big mistake.
-<p></p><strong>Noelle</strong>: Oh,  I think you'll be changing your mind soon~
-<p></p>-a gemstone around Yuna's neck begins to glow,  along with one on Noelle's ear-
+<p></p><strong>Noelle</strong>: Oh, I think you'll be changing your mind soon~
+<p></p>-a gemstone around Yuna's neck begins to glow, along with one on Noelle's ear-
 <p></p><center><span class="asscaps" >Yuna's Gardevoirite is reacting to Noelle's Mega Earring!</span></center>
-<p></p>-it then unfolds into a cocoon-like structure,  and after a moment Yuna breaks out of it with a much poofier "dress"-
+<p></p>-it then unfolds into a cocoon-like structure, and after a moment Yuna breaks out of it with a much poofier "dress"-
 <p></p><center><span class="asscaps" >Yuna has Mega Evolved into Mega Gardevoir!</span></center>
 <p></p><center><iframe title="YouTube video player" width="425" height="350" src="http://www.youtube.com/embed/oXiMaCXnbck?rel=0" frameborder="0" allowfullscreen></iframe></center>
 <p></p><strong>Yuna</strong>: &lt;I'll show you...&gt;
-<p></p><strong>Mezzo</strong>: Cerberus,  hit her with a Dark&#8212;
+<p></p><strong>Mezzo</strong>: Cerberus, hit her with a Dark&#8212;
 <p></p><strong>Noelle</strong>: Hyper Beam!
-<p></p>-Yuna focuses a moment,  then holds her arms out and fires a blast of pink energy from between them-
-<p></p>-the resulting blast knocks out Cerberus instantly,  returning her to her normal form-
-<p></p>-Tifa,  meanwhile,  backflips away as the Klefki tries to Play Rough with her,  but still takes some damage-
+<p></p>-Yuna focuses a moment, then holds her arms out and fires a blast of pink energy from between them-
+<p></p>-the resulting blast knocks out Cerberus instantly, returning her to her normal form-
+<p></p>-Tifa, meanwhile, backflips away as the Klefki tries to Play Rough with her, but still takes some damage-
 <p></p><strong>Lily</strong>: Hit me with a Circle Throw!
 <p></p><strong>Tifa</strong>: &lt;Say what?&gt;
 <p></p><strong>Lily</strong>: Hit... the key thing! The one that I keep thinking is me!
 <p></p><strong>Tifa</strong>: &lt;Oh! Got it!&gt;
 <p></p>-Tifa picks up Jingles and hurls her out of the arena-
 <p></p><strong>Tifa</strong>: &lt;Hi-yah!&gt;
-<p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 4:07:22 PM by Mezzopiano<p><div class="forumsigline" >Hug an Umbreon. They make great hats, and can even block mind-reading!
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363486"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363486</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/DuneTheWanderer" >Dune The Wanderer</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363486" title="permanent link to DuneTheWanderer post on Tue, 25th Mar '14 4:08:36 PM" >Tue, 25th Mar '14 4:08:36 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Nowhere, USA
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Married to the job</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/guykazamaavvy5309.png" height="87" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" >SUPER HERO
-</div><h2>Inner Sanctum</h2>
-<p></p><strong>Dune</strong>: ... Is that a Delta? Hehe,  alright then - I know <em>just</em> who to send out. Go,  Hildr!
-<p></p>-Dune throws a Quick Ball,  and his own Delta Donphan takes the field beside Vega. Her golden/grey hide shines,  even from under the Tyranitar's Sandstorm.-
-<p></p><strong>Dune</strong>: Vega,  use Iron Head on the Tyranitar! Hildr,  start off and Ice Ball on that Rhydon!
-<p></p>-Vega darts off in the blink of an eye,  his movement blurring with speed as his Sand Rush activates. Hildr rolls into a ball and revs up before hurtling at the other Delta.-
-<div class="forumsigline" >Garcia, no one can hire my feelings!
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363487"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363487</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Strawberryflavored" >strawberryflavored</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363487" title="permanent link to strawberryflavored post on Tue, 25th Mar '14 4:10:23 PM" >Tue, 25th Mar '14 4:10:23 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Virginia
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">I only want you gone</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/espeon_by_cygnusleo-d487cyo-small6076_jpg_100.png" height="100" width="99" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2>Gedauvan,  Night 2</h2>
+<p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 4:07:22 PM by Mezzopiano<p></div><div class="forumsigline" >Hug an Altaria. They're soft and cottony.
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363486"> </a><span style=""><sup>363486</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/DuneTheWanderer" >DuneTheWanderer</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363486" title="permanent link to DuneTheWanderer post on 25th Mar 2014 04:08:36 PM">25th Mar 2014 04:08:36 PM</a><span class="forumAuthFrom"> from Nowhere, USA
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Married to the job</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/scarecrow7094.jpg" height="90" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Volunteer
+</div></div><div class="forumtext"><h2>Inner Sanctum</h2>
+<p></p><strong>Dune</strong>: ... Is that a Delta? Hehe, alright then - I know <em>just</em> who to send out. Go, Hildr!
+<p></p>-Dune throws a Quick Ball, and his own Delta Donphan takes the field beside Vega. Her golden/grey hide shines, even from under the Tyranitar's Sandstorm.-
+<p></p><strong>Dune</strong>: Vega, use Iron Head on the Tyranitar! Hildr, start off and Ice Ball on that Rhydon!
+<p></p>-Vega darts off in the blink of an eye, his movement blurring with speed as his Sand Rush activates. Hildr rolls into a ball and revs up before hurtling at the other Delta.-
+</div><div class="forumsigline" ><strong>Go.</strong>
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363487"> </a><span style=""><sup>363487</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Strawberryflavored" >strawberryflavored</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363487" title="permanent link to strawberryflavored post on 25th Mar 2014 04:10:23 PM">25th Mar 2014 04:10:23 PM</a><span class="forumAuthFrom"> from Virginia
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Drowning in your pond, hoping you'll notice me</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/woodvalk1109.jpg" height="96" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Fury of Mother Nature
+</div></div><div class="forumtext"><h2>Gedauvan, Night 2</h2>
 <p></p>Right.
 <p></p><strong>Palutena</strong>:&lt;I'm the best bait.&gt; ^_^
 <p></p>-He starts dragging the Garchomp in the net over to the others-
-<div class="forumsigline" >Psychic Pokemon is watching you type.
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363488"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363488</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Mrsunshinesprinkles" >mrsunshinesprinkles</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363488" title="permanent link to mrsunshinesprinkles post on Tue, 25th Mar '14 4:12:25 PM" >Tue, 25th Mar '14 4:12:25 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;In your heart~
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">I get a feeling so complicated...</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/kim_possible9179_jpg_100.png" height="100" width="81" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" >Can do anything.
-</div><h2>Dendemille</h2>
-<p></p><strong>Robin:</strong> Feeling a need to stretch out his legs,  Robin decided to bring Reuniclus for a walk around Brun Way.
+</div><div class="forumsigline" >Wood over ice
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363488"> </a><span style=""><sup>363488</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Mrsunshinesprinkles" >mrsunshinesprinkles</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363488" title="permanent link to mrsunshinesprinkles post on 25th Mar 2014 04:12:25 PM">25th Mar 2014 04:12:25 PM</a><span class="forumAuthFrom"> from In your heart~
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">[TOP SECRET]</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/doom_marine4579_jpg_100.png" height="75" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Fresh out of hell
+</div></div><div class="forumtext"><h2>Dendemille</h2>
+<p></p><strong>Robin:</strong> Feeling a need to stretch out his legs, Robin decided to bring Reuniclus for a walk around Brun Way.
 <p></p><h2>Route 15</h2>
 <p></p><strong>Robin:</strong> Nothing quite like an autumn breeze. It's the right kind of cold; not "barely cold" or "freezing"; juuuust riiiiight...
 <p></p><strong>Reuniclus:</strong> <em>Got that right! It's just perfect!</em>
 <p></p>-might run into Tagg or DS-
-<div class="forumsigline" >"Why does this girl not have an angel's wings? I suppose you must have left them in your mother’s stomach..."-(´&#65381;&#969;&#65381;`)
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363489"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363489</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/ILoveDogs" >I Love Dogs</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363489" title="permanent link to ILoveDogs post on Tue, 25th Mar '14 4:16:45 PM" >Tue, 25th Mar '14 4:16:45 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Lunn Guyland
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/phpkoxvsj_c2pm405.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2>Pokeball Factory</h2>
-<p></p>-Jingles is sent back with a jingle,  and out goes a Mawile-
+</div><div class="forumsigline" >Go outside? At times like this, kids like you should be playing Nintendo games.
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363489"> </a><span style=""><sup>363489</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/ILoveDogs" >ILoveDogs</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363489" title="permanent link to ILoveDogs post on 25th Mar 2014 04:16:45 PM">25th Mar 2014 04:16:45 PM</a><span class="forumAuthFrom"> from Lunn Guyland
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/sylveon9421_jpg_100.png" height="100" width="100" /><div class="forumBadgeHolder"></div></div><div class="forumtext"><h2>Pokeball Factory</h2>
+<p></p>-Jingles is sent back with a jingle, and out goes a Mawile-
 <p></p><strong>Tybalt</strong>: &lt;Oh...hello.&gt;
-<p></p>-Mimmy smiles,  and a gem hanging from a necklace glows,  as does one held in Tybalt's jaws-
-<p></p>Time for me to try this out! <span style='font-size:69.4%'>Remind me to thank Auntie for this,  Noelle</span>
-<p></p>-she touches the Mega Necklace,  and a cocoon erupts from Tybalt's jaws. When it opens,  Tybalt now has a pair of massive jaws,  and both are cackling-
+<p></p>-Mimmy smiles, and a gem hanging from a necklace glows, as does one held in Tybalt's jaws-
+<p></p>Time for me to try this out! <span style='font-size:69.4%'>Remind me to thank Auntie for this, Noelle</span>
+<p></p>-she touches the Mega Necklace, and a cocoon erupts from Tybalt's jaws. When it opens, Tybalt now has a pair of massive jaws, and both are cackling-
 <p></p>&lt;<span class="evil" >&nbsp;&nbsp; AH-HA-HA-HA-HA! &nbsp;&nbsp;</span>&gt;
-<p></p>-with a cruel grin,  he dashes at Tifa,  his jaws glowing pink-
+<p></p>-with a cruel grin, he dashes at Tifa, his jaws glowing pink-
 <p></p><center><iframe title="YouTube video player" width="425" height="350" src="http://www.youtube.com/embed/90Ie7RofBYQ?rel=0" frameborder="0" allowfullscreen></iframe></center>
-<p></p>-he chomps sharply,  using Play Rough-
-<p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 4:25:02 PM by ILoveDogs<p><div class="forumsigline" >TACTICS
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363490"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363490</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/PippingFool" >Pipping Fool</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363490" title="permanent link to PippingFool post on Tue, 25th Mar '14 4:34:04 PM" >Tue, 25th Mar '14 4:34:04 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Sydney, The Vivid City
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">And they all lived happily ever after <3</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/joancornella81338.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2> &gt; [Thomas Byzant <a class='createlink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/McSnugget' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/McSnugget'>Mc Snugget</a>]?</h2>
+<p></p>-he chomps sharply, using Play Rough-
+<p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 4:25:02 PM by ILoveDogs<p></div><div class="forumsigline" >Do you think I'm an animal? Am I not?
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363490"> </a><span style=""><sup>363490</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/PippingFool" >PippingFool</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363490" title="permanent link to PippingFool post on 25th Mar 2014 04:34:04 PM">25th Mar 2014 04:34:04 PM</a><span class="forumAuthFrom"> from Sydney, The Vivid City
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Getting away with murder</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/shiney3394_jpg_100.png" height="92" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Less than Three
+</div></div><div class="forumtext"><h2> &gt; [Thomas Byzant <a class='createlink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/McSnugget' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/McSnugget'>Mc Snugget</a>]?</h2>
 <p></p><span class="asscaps" > Ha ha. Nice try shitlord.</span>
-<p></p><span class="asscaps" > No,  this man already has a name,  and we all know who he is. This man is <strong>CONSTANTIN MINUCIUS RUFUS PERILLOUX</strong> normally abbreviated to just <strong>CONSTANTIN</strong> or <strong>RICK WITH A SILENT P</strong>. He is 6.3ft,  25 years of age,  shoulder length honey-blond hair with a pencil-line moustache and goatee of matching colour,  brown eyes and so on and so forth. He was born on <strong>JAN 15</strong> which makes him a <strong>CAPRICORN</strong>. What that has to do with anything,  I don't know. Maybe some horoscope shenanigans in the future.</span>
-<p></p><span class="asscaps" > But we're not here to discuss this man's physical appearance or birthdays. We're more interested on his <strong>MISSON</strong>. Laverre is rather large with a large number of possibilities that could be explored by <strong>EXAMINING THE TOWN. Nearby the well,  something </strong>SHINY''' gleams. What do?</span>
+<p></p><span class="asscaps" > No, this man already has a name, and we all know who he is. This man is <strong>CONSTANTIN MINUCIUS RUFUS PERILLOUX</strong> normally abbreviated to just <strong>CONSTANTIN</strong> or <strong>RICK WITH A SILENT P</strong>. He is 6.3ft, 25 years of age, shoulder length honey-blond hair with a pencil-line moustache and goatee of matching colour, brown eyes and so on and so forth. He was born on <strong>JAN 15</strong> which makes him a <strong>CAPRICORN</strong>. What that has to do with anything, I don't know. Maybe some horoscope shenanigans in the future.</span>
+<p></p><span class="asscaps" > But we're not here to discuss this man's physical appearance or birthdays. We're more interested on his <strong>MISSON</strong>. Laverre is rather large with a large number of possibilities that could be explored by <strong>EXAMINING THE TOWN. Nearby the well, something </strong>SHINY''' gleams. What do?</span>
 <p></p><ul ><li>A) Check Inventory
 </li><li>B) Examine <span class="asscaps" > Shiny Thing</span>
 </li><li>C) Explore Town
 </li><li>D) Pick Up Pumpkin.
-</li></ul><p></p><div class="forumsigline" >no words, only dreams now
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363491"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363491</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/ILoveDogs" >I Love Dogs</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363491" title="permanent link to ILoveDogs post on Tue, 25th Mar '14 4:35:09 PM" >Tue, 25th Mar '14 4:35:09 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Lunn Guyland
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/phpkoxvsj_c2pm405.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2>Laverre</h2>
+</li></ul><p></p></div><div class="forumsigline" >All about big hair, big shoes and big attitude!
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363491"> </a><span style=""><sup>363491</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/ILoveDogs" >ILoveDogs</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363491" title="permanent link to ILoveDogs post on 25th Mar 2014 04:35:09 PM">25th Mar 2014 04:35:09 PM</a><span class="forumAuthFrom"> from Lunn Guyland
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/sylveon9421_jpg_100.png" height="100" width="100" /><div class="forumBadgeHolder"></div></div><div class="forumtext"><h2>Laverre</h2>
 <p></p>-B-
-<div class="forumsigline" >TACTICS
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363492"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363492</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363492" title="permanent link to Mezzopiano post on Tue, 25th Mar '14 4:38:05 PM" >Tue, 25th Mar '14 4:38:05 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Arrapago Reef
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/chibimezzoavatarv24542.png" height="100" width="73" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" ><a class='twikilink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth'>Perky Goth</a>
-</div><h2>Poké Ball Factory</h2>
+</div><div class="forumsigline" >Do you think I'm an animal? Am I not?
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363492"> </a><span style=""><sup>363492</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363492" title="permanent link to Mezzopiano post on 25th Mar 2014 04:38:05 PM">25th Mar 2014 04:38:05 PM</a><span class="forumAuthFrom"> from The Sky
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/Fortisavatar9863.jpg" height="100" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >I wanna fly high~
+</div></div><div class="forumtext"><h2>Poké Ball Factory</h2>
 <p></p><strong>Lily</strong>: Watch out!
 <p></p>-Tifa backflips out of the way from the massive pairs of jaws attacking her-
 <p></p><strong>Tifa</strong>: &lt;That was close.&gt;
-<p></p>-Mezzo,  meanwhile,  sends out Xel'lotath-
-<p></p><strong>Xel'lotath</strong>: &lt;You have called for us,  <span style='font-size:69.4%'>and we have arrived as requested.</span>&gt;
+<p></p>-Mezzo, meanwhile, sends out Xel'lotath-
+<p></p><strong>Xel'lotath</strong>: &lt;You have called for us, <span style='font-size:69.4%'>and we have arrived as requested.</span>&gt;
 <p></p><strong>Mezzo</strong>: This is not a time for mind games. This is a time for hitting that Gardevoir before it gets up again.
 <p></p><strong>Xel'lotath</strong>: &lt;We will do <span style='font-size:69.4%'>as you say.</span>&gt;
-<p></p>-Xel'lotath slices at Yuna with her tentacles; Yuna,  being powerless to dodge,  is struck directly in the chest-
+<p></p>-Xel'lotath slices at Yuna with her tentacles; Yuna, being powerless to dodge, is struck directly in the chest-
 <p></p><center><span class="asscaps" >Xel'lotath used Night Slash! A critical hit!</span></center>
 <p></p><strong>Yuna</strong>: &lt;Ugh...&gt;
-<p></p><strong>Tifa</strong>: &lt;Oooh,  I like your style...&gt;
+<p></p><strong>Tifa</strong>: &lt;Oooh, I like your style...&gt;
 <p></p><strong>Lily</strong>: Tifa! Follow up with a Crunch! Don't let that thing get up again!
-<p></p><strong>Tifa</strong>: &lt;I like it so much,  I think I'll try it too!&gt;
-<p></p>-Tifa leaps upon Yuna,  biting down on her neck-
+<p></p><strong>Tifa</strong>: &lt;I like it so much, I think I'll try it too!&gt;
+<p></p>-Tifa leaps upon Yuna, biting down on her neck-
 <p></p><strong>Yuna</strong>: &lt;Ugh... I'm sorry...&gt;
-<p></p>-Yuna closes her eyes and falls to the ground gracefully,  her "dress" returning to its usual shape-
+<p></p>-Yuna closes her eyes and falls to the ground gracefully, her "dress" returning to its usual shape-
 <p></p><strong>Noelle</strong>: No way!
-<p></p>-after defeating her,  Tifa's body glows,  and takes on a larger,  heavier shape-
-<p></p>-a moment later,  the glow fades,  revealing a Pangoro-
+<p></p>-after defeating her, Tifa's body glows, and takes on a larger, heavier shape-
+<p></p>-a moment later, the glow fades, revealing a Pangoro-
 <p></p><strong>Tifa</strong>: &lt;Now this is more like it!&gt;
-<div class="forumsigline" >Hug an Umbreon. They make great hats, and can even block mind-reading!
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363493"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363493</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/MemyselfandI2" >memyselfand I 2</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363493" title="permanent link to memyselfandI2 post on Tue, 25th Mar '14 4:40:28 PM" >Tue, 25th Mar '14 4:40:28 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;The Biosphere
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Squeeeeeeeeeeeee!</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/blizzardfalcon1236.png" height="80" width="80" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" >Brrr.
-</div><h2> Route 15</h2>
-<p></p>-Ever has come out to this route again,  and is training,  when his path is blocked by a Liepard-
+</div><div class="forumsigline" >Hug an Altaria. They're soft and cottony.
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363493"> </a><span style=""><sup>363493</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/MemyselfandI2" >memyselfandI2</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363493" title="permanent link to memyselfandI2 post on 25th Mar 2014 04:40:28 PM">25th Mar 2014 04:40:28 PM</a><span class="forumAuthFrom"> from The Biosphere
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">A teenager in love</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/adorablevomityhellcrow4503.png" height="92" width="95" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Evening.
+</div></div><div class="forumtext"><h2> Route 15</h2>
+<p></p>-Ever has come out to this route again, and is training, when his path is blocked by a Liepard-
 <p></p><strong>Liepard</strong>: &lt;Meow. :3&gt;
 <p></p><strong>Ever</strong>: You're not fooling anyone. What do you want?
 <p></p><strong>Liepard</strong>: &lt;Meow. :3&gt;
-<p></p><strong>Ever</strong>: No,  no. That might work on someone else,  but it won't work on&#8212;
+<p></p><strong>Ever</strong>: No, no. That might work on someone else, but it won't work on&#8212;
 <p></p>-Ever feels something climbing his leg. He looks down to see a Klefki in the process of stealing his keys-
 <p></p><strong>Ever</strong>: Hey!
 <p></p><strong>Klefki</strong>: -giggles and scampers off-
 <p></p><strong>Liepard</strong>: &lt;Meow. :3&gt;
 <p></p><strong>Ever</strong>: ... -sighs and gives chase-
-<p></p><h2> Laverre,  a small courtyard somewhere</h2>
-<p></p>-an impromptu battle is going on,  where Phobos,  Mega Evolved,  is busily beating a Lairon to a pulp-
-<p></p><strong>Amanita</strong>: ...Right,  I think that's enough.
-<p></p><strong>Phobos</strong>: &lt;I have to keep fighting! I'm not going back to being scared ever again!&gt; -shoves the Lairon away,  and whirls to face the crowd- &lt;Someone! Fight me,  now!&gt;
-<p></p><strong>Crowd</strong>: -backs away,  nervously-
+<p></p><h2> Laverre, a small courtyard somewhere</h2>
+<p></p>-an impromptu battle is going on, where Phobos, Mega Evolved, is busily beating a Lairon to a pulp-
+<p></p><strong>Amanita</strong>: ...Right, I think that's enough.
+<p></p><strong>Phobos</strong>: &lt;I have to keep fighting! I'm not going back to being scared ever again!&gt; -shoves the Lairon away, and whirls to face the crowd- &lt;Someone! Fight me, now!&gt;
+<p></p><strong>Crowd</strong>: -backs away, nervously-
 <p></p><strong>Phobos</strong>: &lt;Fine!&gt;
-<p></p>-before either Amanita or anyone else can do anything,  Phobos flees,  launching Shadow Balls at anything that gets close-
+<p></p>-before either Amanita or anyone else can do anything, Phobos flees, launching Shadow Balls at anything that gets close-
 <p></p><strong>Amanita</strong>: ...Oh dear.
 <p></p>-and runs after-
-<div class="forumsigline" >Ice to meet you.
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363494"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363494</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/ILoveDogs" >I Love Dogs</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363494" title="permanent link to ILoveDogs post on Tue, 25th Mar '14 4:40:44 PM" >Tue, 25th Mar '14 4:40:44 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Lunn Guyland
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/phpkoxvsj_c2pm405.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2>Pokeball Center</h2>
-<p></p>-Tybalt giggles with both mouths,  creating an echoing effect-
-<p></p>&lt;<span class="evil" >&nbsp;&nbsp; I'll taste your BLOOD now,  Pangoro! &nbsp;&nbsp;</span>&gt;
+</div><div class="forumsigline" >Adorable vomity hell-crow~
+<p></p>-<a class='twikilink' href='http://tvtropes.org/pmwiki/pmwiki.php/Troper/ILoveDogs' title='http://tvtropes.org/pmwiki/pmwiki.php/Troper/ILoveDogs'>ILoveDogs</a>, 2014
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363494"> </a><span style=""><sup>363494</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/ILoveDogs" >ILoveDogs</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363494" title="permanent link to ILoveDogs post on 25th Mar 2014 04:40:44 PM">25th Mar 2014 04:40:44 PM</a><span class="forumAuthFrom"> from Lunn Guyland
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/sylveon9421_jpg_100.png" height="100" width="100" /><div class="forumBadgeHolder"></div></div><div class="forumtext"><h2>Pokeball Center</h2>
+<p></p>-Tybalt giggles with both mouths, creating an echoing effect-
+<p></p>&lt;<span class="evil" >&nbsp;&nbsp; I'll taste your BLOOD now, Pangoro! &nbsp;&nbsp;</span>&gt;
 <p></p><strong>Mimmy</strong>: Something interesting about Pangoro?
-<p></p>-Tybalt Plays Rough again,  crunching Tifa-
+<p></p>-Tybalt Plays Rough again, crunching Tifa-
 <p></p><strong>Mimmy</strong>: They take quad damage from fairies. o3o
-<div class="forumsigline" >TACTICS
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363495"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363495</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/PippingFool" >Pipping Fool</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363495" title="permanent link to PippingFool post on Tue, 25th Mar '14 4:40:45 PM" >Tue, 25th Mar '14 4:40:45 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Sydney, The Vivid City
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">And they all lived happily ever after <3</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/joancornella81338.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2> &gt; Examine <span class="asscaps" > Shiny Thing</span></h2>
+</div><div class="forumsigline" >Do you think I'm an animal? Am I not?
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363495"> </a><span style=""><sup>363495</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/PippingFool" >PippingFool</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363495" title="permanent link to PippingFool post on 25th Mar 2014 04:40:45 PM">25th Mar 2014 04:40:45 PM</a><span class="forumAuthFrom"> from Sydney, The Vivid City
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Getting away with murder</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/shiney3394_jpg_100.png" height="92" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Less than Three
+</div></div><div class="forumtext"><h2> &gt; Examine <span class="asscaps" > Shiny Thing</span></h2>
 <p></p><span class="asscaps" > He decides to examine the <strong>SHINY THING</strong></span>
-<p></p><strong>Constantin</strong>: -Picking up the object and examines it- It's a penny. From the year I was born as well. -Flips the coin and catches it- If I were a superstitious person,  I would see this as a good sign. Though,  luck has never really been on my side to begin with.
+<p></p><strong>Constantin</strong>: -Picking up the object and examines it- It's a penny. From the year I was born as well. -Flips the coin and catches it- If I were a superstitious person, I would see this as a good sign. Though, luck has never really been on my side to begin with.
 <p></p><span class="asscaps" > Constantin adds the <span class="cinnamon" > PENNY</span> to his Inventory</span>
 <p></p><span class="asscaps" > What do?</span>
 <p></p><ul ><li>A)Explore Laverre
 </li><li>B)Check Inventory
 </li><li>C)Pick up Pumpkin
-</li></ul><p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 4:43:58 PM by PippingFool<p><div class="forumsigline" >no words, only dreams now
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363496"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363496</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363496" title="permanent link to Mezzopiano post on Tue, 25th Mar '14 4:45:34 PM" >Tue, 25th Mar '14 4:45:34 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Arrapago Reef
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/chibimezzoavatarv24542.png" height="100" width="73" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" ><a class='twikilink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth'>Perky Goth</a>
-</div><h2>Poké Ball Factory</h2>
+</li></ul><p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 4:43:58 PM by PippingFool<p></div><div class="forumsigline" >All about big hair, big shoes and big attitude!
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363496"> </a><span style=""><sup>363496</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363496" title="permanent link to Mezzopiano post on 25th Mar 2014 04:45:34 PM">25th Mar 2014 04:45:34 PM</a><span class="forumAuthFrom"> from The Sky
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/Fortisavatar9863.jpg" height="100" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >I wanna fly high~
+</div></div><div class="forumtext"><h2>Poké Ball Factory</h2>
 <p></p><strong>Tifa</strong>: &lt;Oh crap...&gt;
-<p></p>-Tifa tries to backflip out of the way again,  but is too large,  and is set upon and crunched viciously,  knocking her out instantly-
-<p></p><strong>Lily</strong>: Ugh. You'd better be able to finish this,  Mezzy!
-<p></p><strong>Mezzo</strong>: Well,  I'm working on it. Xel! Psycho Cut that thing!
-<p></p><strong>Xel'lotath</strong>: &lt;You ask this of us,  <span style='font-size:69.4%'>but we have a better idea.</span> It is time we showed you <span style='font-size:69.4%'>just what we are capable of.</span>&gt;
-<p></p>-Xel'lotath focuses a moment,  then does a rush at Tybalt at full force-
+<p></p>-Tifa tries to backflip out of the way again, but is too large, and is set upon and crunched viciously, knocking her out instantly-
+<p></p><strong>Lily</strong>: Ugh. You'd better be able to finish this, Mezzy!
+<p></p><strong>Mezzo</strong>: Well, I'm working on it. Xel! Psycho Cut that thing!
+<p></p><strong>Xel'lotath</strong>: &lt;You ask this of us, <span style='font-size:69.4%'>but we have a better idea.</span> It is time we showed you <span style='font-size:69.4%'>just what we are capable of.</span>&gt;
+<p></p>-Xel'lotath focuses a moment, then does a rush at Tybalt at full force-
 <p></p><center><span class="asscaps" >Xel'lotath used Superpower!</span></center>
 <p></p><center><span class="asscaps" >Xel'lotath's Attack rose! Xel'lotath's Defense rose!</span></center>
-<p></p><strong>Lily</strong>: Whoa,  they can learn that?
+<p></p><strong>Lily</strong>: Whoa, they can learn that?
 <p></p><strong>Mezzo</strong>: Apparently...
-<div class="forumsigline" >Hug an Umbreon. They make great hats, and can even block mind-reading!
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363497"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363497</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/ILoveDogs" >I Love Dogs</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363497" title="permanent link to ILoveDogs post on Tue, 25th Mar '14 4:50:06 PM" >Tue, 25th Mar '14 4:50:06 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Lunn Guyland
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/phpkoxvsj_c2pm405.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2>Pokeball Factory</h2>
-<p></p>-Tybalt is hit,  but survives rather easily-
+</div><div class="forumsigline" >Hug an Altaria. They're soft and cottony.
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363497"> </a><span style=""><sup>363497</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/ILoveDogs" >ILoveDogs</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363497" title="permanent link to ILoveDogs post on 25th Mar 2014 04:50:06 PM">25th Mar 2014 04:50:06 PM</a><span class="forumAuthFrom"> from Lunn Guyland
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Hounds of love are hunting</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/sylveon9421_jpg_100.png" height="100" width="100" /><div class="forumBadgeHolder"></div></div><div class="forumtext"><h2>Pokeball Factory</h2>
+<p></p>-Tybalt is hit, but survives rather easily-
 <p></p><span class="evil" >&nbsp;&nbsp; Your eldritch powers are <em>nothing</em>! &nbsp;&nbsp;</span>
-<p></p>-he cackles again and dashes at Xel'lotath,  attempting to tear at the Malamar with a Play Rough-
-<p></p><div class="forumsigline" >TACTICS
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363498"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363498</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Uilleam" >Uilleam</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363498" title="permanent link to Uilleam post on Tue, 25th Mar '14 4:50:32 PM" >Tue, 25th Mar '14 4:50:32 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;<a class='twikilink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/BonnieScotland' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/BonnieScotland'>Bonnie Scotland</a>
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">I only want you gone</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/once-in-a-lifetime134.jpg" height="56" width="99" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" >Same as it ever was
-</div><h3>Consquest</h3>
-<p></p>(D: Go back to HQ and do your job,  ya lazy bastard.)
-<p></p><div class="forumsigline" >Those who say ignorance is bliss have never tried being intelligent.
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363499"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363499</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363499" title="permanent link to Mezzopiano post on Tue, 25th Mar '14 4:52:58 PM" >Tue, 25th Mar '14 4:52:58 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Arrapago Reef
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/chibimezzoavatarv24542.png" height="100" width="73" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><div class="forumtitle" ><a class='twikilink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/PerkyGoth'>Perky Goth</a>
-</div><h2>Poké Ball Factory</h2>
-<p></p>-Xel'lotath takes a heavy hit,  but her improved defense allows her to remain standing-
-<p></p><strong>Xel'lotath</strong>: &lt;You think you are superior,  <span style='font-size:69.4%'>but your confidence betrays you...</span>&gt;
+<p></p>-he cackles again and dashes at Xel'lotath, attempting to tear at the Malamar with a Play Rough-
+<p></p></div><div class="forumsigline" >Do you think I'm an animal? Am I not?
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363498"> </a><span style=""><sup>363498</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Uilleam" >Uilleam</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363498" title="permanent link to Uilleam post on 25th Mar 2014 04:50:32 PM">25th Mar 2014 04:50:32 PM</a><span class="forumAuthFrom"> from <a class='twikilink' href='http://tvtropes.org/pmwiki/pmwiki.php/Main/BonnieScotland' title='http://tvtropes.org/pmwiki/pmwiki.php/Main/BonnieScotland'>Bonnie Scotland</a>
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Sinking with my ship</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/heligoland4952.jpg" height="100" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Meh, Mezzanine was better.
+</div></div><div class="forumtext"><h3>Consquest</h3>
+<p></p>(D: Go back to HQ and do your job, ya lazy bastard.)
+<p></p></div><div class="forumsigline" ><a class='urllink' href='https://rateyourmusic.com/~Uilleam'>I have a RateYourMusic account now. Hooray for bored teenage boys rambling about auditory products!</a>
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363499"> </a><span style=""><sup>363499</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/Mezzopiano" >Mezzopiano</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363499" title="permanent link to Mezzopiano post on 25th Mar 2014 04:52:58 PM">25th Mar 2014 04:52:58 PM</a><span class="forumAuthFrom"> from The Sky
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Crazy Cat Lady</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/Fortisavatar9863.jpg" height="100" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >I wanna fly high~
+</div></div><div class="forumtext"><h2>Poké Ball Factory</h2>
+<p></p>-Xel'lotath takes a heavy hit, but her improved defense allows her to remain standing-
+<p></p><strong>Xel'lotath</strong>: &lt;You think you are superior, <span style='font-size:69.4%'>but your confidence betrays you...</span>&gt;
 <p></p><strong>Noelle</strong>: Why is that Malamar so creepy?
-<p></p><strong>Lily</strong>: Trust us,  it's worse when you can understand what she's saying.
+<p></p><strong>Lily</strong>: Trust us, it's worse when you can understand what she's saying.
 <p></p><strong>Mezzo</strong>: Use Superpower again!
 <p></p>-Xel'lotath slams into Tybalt a second time-
 <p></p><strong>Xel'lotath</strong>: &lt;Ha ha ha ha <span style='font-size:69.4%'>ha ha ha ha...</span>&gt;
-<div class="forumsigline" >Hug an Umbreon. They make great hats, and can even block mind-reading!
-</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363500"> </a><span style="font-size:x-small;color:black;"><sup>&nbsp;363500</sup></span> <a class="twikilink" href="http://tvtropes.org/pmwiki/pmwiki.php/Tropers/PippingFool" >Pipping Fool</a>, <a style="font-size:smaller;vertical-align:middle;"  href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363500" title="permanent link to PippingFool post on Tue, 25th Mar '14 4:54:04 PM" >Tue, 25th Mar '14 4:54:04 PM</a><span style="font-size:smaller;vertical-align:middle;"> from&nbsp;Sydney, The Vivid City
- </span>        <a class="forumbutton" href="http://tvtropes.org/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span style="font-size:smaller;vertical-align:middle;"> Relationship Status: <span style="color:chocolate;">And they all lived happily ever after <3</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img src="http://static.mediatropes.info/pmwiki/pub/images/joancornella81338.jpg" height="100" width="100" style="margin-top:2px;margin-bottom:2px;"/></div><div style="clear:left;float:left;width:104px;text-align:center;margin-bottom:4px;left:-2px;position:relative;"></div><h2> &gt; Go back to HQ</h2>
-<p></p><span class="asscaps" > He's on a mission here from his superior. He can't just turn back now,  idiot</span>
-<p></p><span class="asscaps" > He checks his Inventory. Currently you have the <span class="cinnamon" > Penny</span>,  the <strong>Two Cards from the MYSTERY PERSON</strong> and a few <strong>SACHETS OF INSTANT COFFEE</strong>,  for emergency cases of course.</span>
-<p></p><strong>Cosntasntin</strong>: One does know a situation that cannot be improved by Coffee,  even the worst types.
-<p></p><span class="asscaps" > Currently,  nothing in the Inventory could help him get any closer to your goal of finding RUMPELSTILKSKIN'S NAME. What do</span>
+</div><div class="forumsigline" >Hug an Altaria. They're soft and cottony.
+</div></div><div class="forumreplyheader" ><div style="margin-top:2px;"><a  name="363500"> </a><span style=""><sup>363500</sup></span> <a style='font-size: larger;' class="twikilink" href="/pmwiki/pmwiki.php/Tropers/PippingFool" >PippingFool</a><a style="float:right;font-size:0.9em"  href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14540#363500" title="permanent link to PippingFool post on 25th Mar 2014 04:54:04 PM">25th Mar 2014 04:54:04 PM</a><span class="forumAuthFrom"> from Sydney, The Vivid City
+ </span>        <a class="forumbutton" href="/pmwiki/wiki_pm.php?to_troper=daltar" >Get RP Mod</a>    <span class="relationship-status"> , <span>Relationship Status:</span> <span style="color:chocolate;">Getting away with murder</span></span></div></div><div class="forumreplybody"  ><div class="forumimageholder"  ><img class="forumAuthImage" src="http://static.mediatropes.info/pmwiki/pub/images/shiney3394_jpg_100.png" height="92" width="100" /><div class="forumBadgeHolder"></div><div class="forumtagline" >Less than Three
+</div></div><div class="forumtext"><h2> &gt; Go back to HQ</h2>
+<p></p><span class="asscaps" > He's on a mission here from his superior. He can't just turn back now, idiot</span>
+<p></p><span class="asscaps" > He checks his Inventory. Currently you have the <span class="cinnamon" > Penny</span>, the <strong>Two Cards from the MYSTERY PERSON</strong> and a few <strong>SACHETS OF INSTANT COFFEE</strong>, for emergency cases of course.</span>
+<p></p><strong>Cosntasntin</strong>: One does know a situation that cannot be improved by Coffee, even the worst types.
+<p></p><span class="asscaps" > Currently, nothing in the Inventory could help him get any closer to your goal of finding RUMPELSTILKSKIN'S NAME. What do</span>
 <p></p><ul ><li>A) Explore Laverre
 </li><li>B) Pick Up Pumpkin
-</li></ul><p></p><p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 4:55:01 PM by PippingFool<p><div class="forumsigline" >no words, only dreams now
+</li></ul><p></p><p style="font-size:x-small;font-style:italic;" >edited 25th Mar '14 4:55:01 PM by PippingFool<p></div><div class="forumsigline" >All about big hair, big shoes and big attitude!
 </div></div><a name="postbutton"> </a>
 
 
 
 <div style="text-align:center;">
 <br/>
-	
-		<a class="forumbuttonsmall" href="http://tvtropes.org/pmwiki/factivity.php">post activity</a>
-	<a class="forumbuttonsmall" href="conversations.php?topic=0000000000000000000004ul">Role&nbsp;Playing&nbsp;conversation&nbsp;list</a>
-</div>
-<div style="text-align:center;margin-top:24px;" >
-		Total posts: 384,451 <br/>
-		<a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=1">&nbsp;1</a>  ... <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14535">14535</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14536">14536</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14537">14537</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14538">14538</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14539">14539</a>  <div class="forumpagebuttons">14540</div> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14541">14541</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14542">14542</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14543">14543</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14544">14544</a> <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=14545">14545</a>  ... <a class="forumpagebutton" href="http://tvtropes.org/pmwiki/posts.php?discussion=12971269370A74820100&page=15379">15379</a>  
-</div>
-<center>
-<div style="text-align:center;position:relative;">
-	<p> </p>
-	<form action="forum_search_titles.php" method="post" style="display:inline;">
-		<input type="text" id="keyword" name="keyword" value="" />
-		<input class="forumbutton" type="submit" value="search forum titles" />
-	</form>
-	<form action="forum_troper_posts.php" method="post" style="display:inline;">
-		<input type="text" id="fortroper" name="fortroper" value="" />
-		<input  class="forumbutton" type="submit" value="find post by troper" />
-	</form>
-	<br/>
-</div>
 
-<!-- med rectangle -->
-<div id='div-gpt-ad-1359660027796-0' style='width:300px; height:250px;'>
-<script type='text/javascript'>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1359660027796-0'); });
+<div class='alphalist'>
+		<div>
+		Total posts: 444,450 
+		</div>
+		<a class="forumpagebutton " href="/pmwiki/posts.php?discussion=12971269370A74820100&page=1">1</a>  ... <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14535">14535</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14536">14536</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14537">14537</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14538">14538</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14539">14539</a>  <div class="forumpagebuttons active_letter">14540</div> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14541">14541</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14542">14542</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14543">14543</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14544">14544</a> <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=14545">14545</a>  ... <a class="forumpagebutton" href="/pmwiki/posts.php?discussion=12971269370A74820100&page=17778">17778</a>  
+</div>
+</div>
+                                    <div class="sub-nav">
+                    <ul>
+                                                    <li><a href="/pmwiki/conversations.php?topic=0000000000000000000004ul"><i class="fa fa-arrow-left sub-arrow"></i>Back To Role Playing</a></li>
+                                                                        <li><a href="/pmwiki/factivity.php">New Posts</a></li>
+                        <li><a href="/pmwiki/pmwiki.php/Main/TVTropesForum">About The Forums</a></li>
+                    </ul>
+                </div><!--sub-nav-->  
+                    <div style="margin-top:5px;margin-bottom:10px">
+                        
+<div id='dfp-ad-brt_med_rectangle'>
+<script type='text/javascript'> 
+googletag.cmd.push(function() { googletag.display('dfp-ad-brt_med_rectangle'); }); 
+</script> 
+</div>                    </div>
+                </div> 
+                      <div class="footer">
+         <div class="footer-top">
+
+                        <div class="col-cont">
+               <div class="tropes-col">
+                  <ul>
+                     <li class='foot-heading'><a href="/pmwiki/pmwiki.php/Main/Tropes">Tropes</a></li>
+                     <li> <a href="/pmwiki/browse.php">Browse Tropes</a></li>
+                     <li> <a href="/pmwiki/pmwiki.php/Administrivia/WelcomeToTVTropes">Welcome to TV Tropes</a></li>
+                     <li><a href="/pmwiki/yk_activity.php">YKTTW</a></li>
+                     <li><a href="/pmwiki/changes.php">New Edits</a></li>
+                     <li><a href="/pmwiki/query.php?type=lnf">Trope Finder</a></li>
+                     <li><a href="/pmwiki/conversations.php?topic=renames">Trope Repair Shop</a></li>
+                  </ul>
+               </div>
+               <div class="forum-col">
+                  <ul>
+                     <li class='foot-heading'><a href="/pmwiki/topics.php">Forum</a></li>
+                     <li><a href="/pmwiki/topics.php">Forum Topics</a></li>
+                     <li><a href="/pmwiki/changes.php?filter=Discussions">Recent Discussions</a></li>
+                     <li><a href="/pmwiki/workshops.php">Workshops</a></li>
+                     <li><a href="/pmwiki/lbs.php">Live Blogs</a></li>
+                  </ul>
+               </div>
+               <div class="reviews-col">
+                  <ul>
+                     <li class='foot-heading'><a href="/pmwiki/review_activity.php">Reviews</a></li>
+                     <li><a href="/pmwiki/about_reviews.php">About Reviews</a></li>
+                     <li><a href="/pmwiki/review_activity.php">Latest Reviews</a></li>
+                     <li><a href="/pmwiki/reviews_index.php">Review Index</a></li>
+                                             <li><a href="/pmwiki/login.php">Your Reviews</a></li>
+                                      </ul>
+               </div>
+
+               
+
+               <div class="random-cont">
+                  <a href="/pmwiki/pmwiki.php/Main/MusicVideoSyndrome" rel="nofollow">
+                        <div class="random-btn header-rand"> 
+                            <div class='dice-cont'><img src="http://static.tvtropes.org/dice.png" height="22" width="39" /></div>
+                            <div class="random-text">Random Trope</div> 
+                        </div>
+                  </a>
+                  <a href="/pmwiki/pmwiki.php/Music/SigurRos" rel="nofollow">
+                        <div class="random-btn header-rand"> 
+                            <div class='dice-cont'><img src="http://static.tvtropes.org/dice.png" height="22" width="39" /></div>
+                            <div class="random-text">Random Media</div> 
+                        </div>
+                  </a>   
+                  
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="pp-statement">
+                                    <p id="switchDeviceCss"><a href="/pmwiki/switchDeviceCss.php?mobileVersion=0">Switch To Desktop Version</a></p>
+                                
+                <p>TV Tropes by TV Tropes Foundation, LLC is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. <br>Permissions beyond the scope of this license may be available from <a xmlns:cc="http://creativecommons.org/ns#" href="mailto:thestaff@tvtropes.org" rel="cc:morePermissions"> thestaff@tvtropes.org</a>. <a href="/pmwiki/privacypolicy.php">Privacy Policy</a></p>
+            </div>
+         </div>
+      </div>
+
+
+                </div><!-- /scroller-inner -->
+            </div><!-- /scroller -->
+        </div><!-- /pusher -->
+
+    </div><!-- /container-->
+
+
+            <script type="text/javascript">
+                $('.expand').click(function() {
+                    $(this).find('.fa-plus-circle').toggleClass('fa-minus-circle');
+                });
+                setAllFolders('');
+            </script>
+
+            <!-- These code tags are used for the login dropdown 
+            <code>
+                clicking on ".more" toggles class "visible" on "#popover"
+            </code>
+             -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3821842-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
-</div>
 
-</center>
-<div style="text-align:center;">
-	<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">TV Tropes</span> by 
-	<a xmlns:cc="http://creativecommons.org/ns#" href="http://tvtropes.org" property="cc:attributionName" rel="cc:attributionURL">TV Tropes Foundation, LLC</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
-	<br />Permissions beyond the scope of this license may be available from <a xmlns:cc="http://creativecommons.org/ns#" href="mailto:thestaff@tvtropes.org" rel="cc:morePermissions"> thestaff@tvtropes.org</a>.						
-	<br/><a href="http://tvtropes.org/pmwiki/privacypolicy.php">Privacy Policy</a>
-</div>
 
-</td>
-</tr>
-</table>
-</div><!-- container -->
-<script type="text/javascript" async="true">
-zap_quote_buttons();
+
+
+<script>
+    (function() {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+        var fbds = document.createElement('script');
+        fbds.async = true;
+        fbds.src = '//connect.facebook.net/en_US/fbds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(fbds, s);
+        _fbq.loaded = true;
+        }
+        _fbq.push(['addPixelId', '750572384991117']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
-</body></html>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=750572384991117&amp;ev=PixelInitialized" /></noscript>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1020390763;
+var google_conversion_label = "VHnFCP6P4FYQ69rH5gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<div class="bottom-iframe">
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+</div>
+<noscript>
+<div style="display:none;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1020390763/?value=1.00&amp;currency_code=USD&amp;label=VHnFCP6P4FYQ69rH5gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "18986967" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=18986967&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+            </body>
+        </html>
+
+        
