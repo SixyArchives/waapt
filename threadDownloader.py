@@ -1,3 +1,7 @@
+#TV Tropes Thread Downloader/Archiver
+#Original author: Storyyeller
+#Branched from a late-2012 pastebin, archived at https://gist.github.com/Sixthhokage1/2d5f077b65b65e804b65/0512286e3180045107b3549abed4e5c41ae37988
+
 from __future__ import division
 import urllib, os.path, collections, cPickle, math, itertools
 from time import sleep
